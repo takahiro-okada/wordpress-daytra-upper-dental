@@ -1,0 +1,14 @@
+@use '../global/' as *;
+
+.u-sp-hidden{
+  display: none;
+  @include mq('lg'){
+    display: block;
+  }
+}
+.u-pc-hidden{
+  display: block;
+  @include mq('lg'){
+    display: none;
+  }
+}

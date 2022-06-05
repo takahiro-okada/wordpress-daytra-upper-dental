@@ -1,0 +1,24 @@
+.title {
+	color: blue;
+}
+
+.u-sp-hidden {
+	display: none;
+}
+
+.u-pc-hidden {
+	display: block;
+}
+
+@media (min-width: 992px) {
+
+.u-sp-hidden {
+	display: block;
+}
+
+.u-pc-hidden {
+	display: none;
+}
+
+}
+
