@@ -1,0 +1,5 @@
+@use "../setting/" as *;
+
+@function rem($pxcel) {
+  @return $pxcel * 0.1rem;
+}

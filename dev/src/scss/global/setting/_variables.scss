@@ -1,0 +1,29 @@
+$font-color:#393939;
+$body-color:#fff;
+$primary-color:#1391E6;
+$sub-color01:#0060A0;
+$sub-color02:#DFF1FD;
+$accent-color:#EE5A6D;
+
+// レイアウト幅
+$layout-width-canvas: 1500px;
+$layout-width-inner: 1180px;
+$layout-width-vw: 1180;
+$layout-width-sp: 768px;
+$layout-width-main: 840px;
+$layout-width-side: $layout-width-inner - $layout-width-main - 38px; // 38pxは余白の幅
+
+// ヘッダー高さ
+$header-height: 70px;
+$header-height-sp: 52px;
+
+// z-index の指定
+$layer: (
+	modal: 100,
+	drawer: 40,
+	floating: 30,
+	header: 20,
+	footer: 10,
+	default: 1
+);
+

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'MPLUS';
+  src: url('../font/MPLUSRounded1c-Regular.ttf') format('truetype');
+}
+
+$font-default: "MPLUS", sans-serif;
+
+body{
+  font-family: "MPLUS";
+}

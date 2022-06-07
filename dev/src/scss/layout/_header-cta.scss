@@ -1,0 +1,18 @@
+@use '../global/' as *;
+
+.l-header-cta{
+
+}
+.l-header-cta__address{
+  font-size: 12px;
+  text-align: right;
+  line-height: 1;
+}
+.l-header-cta__tel{
+  font-size: 32px;
+  line-height: calc(36 / 24);
+  margin-top: 5px;
+  font-weight: bold;
+  color: $primary-color;
+  text-align: right;
+}

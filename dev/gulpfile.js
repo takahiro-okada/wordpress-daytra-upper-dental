@@ -28,7 +28,7 @@ const compileJs = () => {
 const watch = () => {
   gulp.watch("./src/scss/**/*.scss",gulp.series(compileSass,browserReload))
   gulp.watch("./src/js/**/*.js",gulp.series(compileJs,browserReload))
-  gulp.watch("./img/scss/**/*",gulp.series(copyImage,browserReload))
+  gulp.watch("./src/img/**/*",gulp.series(copyImage,browserReload))
   gulp.watch("../**/*.php",browserReload)
 }
 
@@ -49,7 +49,13 @@ const copyImage = () => {
   .pipe(gulp.dest("../dist/img/"))
 }
 
+const copyFont = () => {
+  return gulp.src("./src/font/**/*")
+  .pipe(gulp.dest("../dist/font/"))
+}
+
+
 exports.compileSass = compileSass;
 exports.watch = watch;
 exports.dev = gulp.parallel(buildServer,watch)
-exports.build = gulp.parallel(compileSass,compileJs,copyImage)
+exports.build = gulp.parallel(compileSass,compileJs,copyImage,copyFont)

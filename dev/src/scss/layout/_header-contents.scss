@@ -1,0 +1,19 @@
+.l-header-contents{
+  display: flex;
+}
+.l-header-contents__item{
+  text-align: center;
+}
+.l-header-contents__link{
+  padding: 0 12px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  &:hover{
+    rect{
+      fill:red;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@use '../global/' as *;
+
+.c-drawer{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #fff;
+  top:0;
+  left: 0;
+  z-index: 100;
+  transform: translateX(100%);
+  transition:  transform .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.c-drawer.is-checked{
+  transform: translateX(27%);
+  width: 80%;
+}
+.c-drawer__list{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-drawer__list{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 0 rem(20);
+}
+.c-drawer__item{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  &:not(:first-child) .c-drawer__link{
+    border-top: 1px solid $sub-color01;
+  }
+}
+.c-drawer__link{
+  width: inherit;
+  display: inline-block;
+  padding: rem(20) rem(10);
+  font-size: rem(20);
+  text-decoration: none;
+  color: #1c273e;
+  text-align: center;
+}

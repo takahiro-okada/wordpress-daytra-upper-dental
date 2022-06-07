@@ -1,0 +1,39 @@
+@use '../global/' as *;
+
+.l-header{
+  box-shadow: 0 3px 0 0 rgba(0,0,0,.16);
+  padding:0 15px;
+  height: 60px;
+  @include mq('xl'){
+    height: 80px;
+    padding: 0 40px;
+  }
+}
+.l-header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+.l-header__main{
+  display: none;
+  @include mq('xl'){
+    display: flex;
+    align-items: center;
+  }
+}
+.l-header__logo{
+  margin-left: 5px;
+}
+.l-header__contents{
+
+}
+.l-header__cta{
+  margin-left: 23px;
+}
+.l-header__hamburger{
+
+}
+.l-header__drawer{
+
+}

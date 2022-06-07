@@ -1,0 +1,21 @@
+@use '../global/' as *;
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  html {
+    font-size: 0.625vw;
+  }
+}
+body{
+  font-family: $font-default;
+  color: $font-color;
+  line-height: 2;
+  margin: auto;
+}
+a{
+  color: $font-color;
+  text-decoration: none;
+}
