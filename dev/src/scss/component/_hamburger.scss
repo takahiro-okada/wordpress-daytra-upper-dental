@@ -5,7 +5,7 @@
   background-color: transparent;
   width: 38px;
   z-index: 101;
-  @include mq('lg'){
+  @include mq('xl'){
     display: none;
   }
 }
@@ -37,13 +37,13 @@
   background-color: $primary-color;
 }
 .c-hamburger.is-checked span:nth-child(1){
-  top:rem(9);
+  top:rem(12);
   transform: rotate(45deg);
 }
 .c-hamburger.is-checked span:nth-child(2){
   opacity: 0;
 }
 .c-hamburger.is-checked span:nth-child(3){
-  top: rem(-2);
+  top: rem(-1);
   transform: rotate(-45deg);
 }

@@ -15,4 +15,10 @@
   font-weight: bold;
   color: $primary-color;
   text-align: right;
+  display: flex;
+  align-items: baseline;
+  img{
+    width: rem(30);
+    margin-right: rem(5);
+  }
 }
