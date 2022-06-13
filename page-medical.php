@@ -3,6 +3,10 @@
 ?>
 
 <?php get_header(); ?>
-診療案内
+
+<?php
+$sub_title = "MEDICAL";
+get_template_part('./template-parts/sub-mv', null , $sub_title)
+?>
 
 <?php get_footer(); ?>

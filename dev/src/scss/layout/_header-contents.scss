@@ -13,9 +13,13 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  transition: fill .3s, color .3s;
   &:hover{
     svg{
-      fill:red;
+      fill:$primary-color;
+    }
+    .l-header-contents__text{
+      color:$primary-color;
     }
   }
 }
@@ -23,4 +27,7 @@
   margin-top: rem(6);
   line-height: 1;
   font-weight: bold;
+  transition: color .3s;
+  &:hover{
+  }
 }

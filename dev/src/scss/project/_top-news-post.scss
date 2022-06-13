@@ -6,6 +6,8 @@
   padding: rem(11) 0;
   border-top: 1px solid #393939;
   border-bottom: 1px solid #393939;
+  font-size: rem(14);
+  line-height: calc(20 /14);
   &:hover{
     .p-top-news-post__date,
     .p-top-news-post__title{
@@ -14,7 +16,7 @@
     .p-top-news-post__title{
       &::before{
         background: url(../img/index/blue-arrow.svg) no-repeat;
-        right: rem(5);
+        right: rem(0);
       }
     }
   }
@@ -23,6 +25,7 @@
   display: inline-block;
   width: rem(60);
   transition: color .3s;
+  font-size: rem(12);
 }
 .p-top-news-post__title{
   margin-left: rem(30);
@@ -34,7 +37,7 @@
     background: url(../img/index/black-arrow.svg) no-repeat;
     background-size: contain;
     position: absolute;
-    right: 0;
+    right: rem(5);
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);

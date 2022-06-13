@@ -1,0 +1,16 @@
+@use '../global/' as *;
+
+.l-copy-right{
+  padding: rem(17) 0 rem(60);
+  background-color: $primary-color;
+  margin-top: rem(20);
+  @include mq('lg'){
+    margin-top: rem(50);
+  }
+}
+.l-copy-right__text{
+  color: #fff;
+  font-size: rem(14);
+  text-align: center;
+  display: block;
+}

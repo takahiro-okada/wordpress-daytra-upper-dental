@@ -4,38 +4,6 @@
 
 }
 .p-recommend__title{
-  font-size: rem(20);
-  line-height: calc(28/20);
-  letter-spacing: .08em;
-  position: relative;
-  text-align: center;
-  width: fit-content;
-  margin-right: auto;
-  margin-left: auto;
-  @include mq('md'){
-    font-size: rem(28);
-  }
-
-  &:before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: rem(-70);
-    transform: translate(0, -50%);
-    background: url(../img/index/recommend-deco.svg) no-repeat center center / contain;
-    width: rem(50);
-    height: rem(50);
-  }
-  &:after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: rem(-70);
-    transform: translate(0, -50%);
-    background: url(../img/index/recommend-deco.svg) no-repeat center center / contain;
-    width: rem(50);
-    height: rem(50);
-  }
 }
 .p-recommend__list{
   margin-top: rem(40);
@@ -46,13 +14,13 @@
   @include mq('md'){
     display: flex;
     flex-wrap: wrap;
-    gap:rem(24);
+    gap:rem(30);
     width: 100%;
   }
 }
 .p-recommend__item{
   @include mq('md'){
-    width: calc((100% - (rem(24) * 2)) / 3);
+    width: calc((100% - (rem(30) * 2)) / 3);
   }
 }
 .p-recommend__item:not(:first-child){

@@ -15,8 +15,8 @@
     top: 0;
     @include mq('md'){
       background-size: contain;
-      height: 40vw;
-      left: 50%;
+      height: rem(776);
+      left: 33%;
     }
   }
 }
@@ -35,10 +35,11 @@
 .p-featured__body{
   padding:0 rem(20);
   @include mq('md'){
+    margin-top: rem(32);
     max-width: 100%;
-    width: 30%;
+    width: 33%;
     padding:0;
-    margin-left: rem(60);
+    margin-left: rem(95);
   }
 }
 .p-featured__image{
@@ -46,7 +47,7 @@
   width: 90%;
   @include mq('md'){
     margin-top: 0;
-    max-height: rem(350);
+    max-height: rem(438);
     width: 50%;
     img{
       border-radius: rem(10) rem(10) rem(10) rem(10);

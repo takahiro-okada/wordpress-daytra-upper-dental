@@ -1,5 +1,10 @@
 @use '../global/' as *;
 
 .l-featured{
-  padding-top: rem(170);
+  margin-top: rem(60);
+  padding-top: rem(110);
+  @include mq('md'){
+    padding-bottom: rem(128);
+    padding-top: rem(210);
+  }
 }

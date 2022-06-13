@@ -1,0 +1,30 @@
+@use "../global/" as *;
+
+.p-blog{
+
+}
+.p-blog__title{
+
+}
+.p-blog__cards{
+  margin-top: rem(43);
+  @include mq('md'){
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.p-blog__card{
+  @include mq('md'){
+    width: calc((100% - 100px) / 3);
+    margin-left: rem(50);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+    border-radius: rem(20);
+    &:nth-child(3n+1){
+      margin-left: 0;
+    }
+  }
+}
+.p-blog__button{
+  margin-top: rem(37);
+  text-align: center;
+}

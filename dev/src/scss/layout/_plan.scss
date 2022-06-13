@@ -1,0 +1,48 @@
+@use '../global/' as *;
+
+.l-plan--deco-top {
+  height: 22vw;
+  width: 100%;
+  position: relative;
+  &:before {
+    content: "";
+    display: inline-block;
+    background: url(../img/index/deco-plan-top.png) no-repeat top center / cover;
+    height: inherit;
+    width: 100%;
+    position: absolute;
+  }
+  @include mq("md") {
+    height: 16vw;
+    &:before {
+      background: url(../img/index/deco-plan-top-pc.png) no-repeat top center / cover;
+    }
+  }
+}
+
+.l-plan--deco-bottom {
+  height: 22vw;
+  width: 100%;
+  &:before {
+    content: "";
+    display: inline-block;
+    background: url(../img/index/deco-plan-bottom-sp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    height: inherit;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  @include mq("md") {
+    height: 9vw;
+    &:before {
+      background: url(../img/index/deco-plan-bottom-pc.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+    }
+  }
+}

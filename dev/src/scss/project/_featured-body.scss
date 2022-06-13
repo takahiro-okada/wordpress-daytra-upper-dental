@@ -11,6 +11,7 @@
   line-height: calc(32 / 20);
   @include mq('md'){
     font-size: rem(28);
+    margin-top: rem(30);
   }
 }
 .p-featured-body__sub-title{
@@ -20,11 +21,12 @@
   line-height: calc(32 / 20);
   @include mq('md'){
     font-size: rem(14);
+    margin-top: rem(32);
   }
 }
 .p-featured-body__desc{
   font-size: rem(14);
-  margin-top: rem(32);
+  margin-top: rem(30);
   line-height: calc( 24 / 14 );
   @include mq('lg'){
 
@@ -35,5 +37,6 @@
   text-align: center;
   @include mq('md'){
     margin-top: rem(40);
+    text-align: left;
   }
 }

@@ -1,3 +1,8 @@
+// common component
+@use 'footer';
+@use 'footer-nav';
+
+// Top page
 @use 'slider';
 @use 'top';
 @use 'top-news';
@@ -6,3 +11,10 @@
 @use 'featured-body';
 @use 'recommend';
 @use 'recommend-item';
+@use 'plan';
+@use 'plan-item';
+@use 'blog';
+@use 'blog-card';
+
+// Sub page
+@use 'sub-mv';

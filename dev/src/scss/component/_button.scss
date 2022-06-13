@@ -8,6 +8,7 @@
   font-size: rem(14);
   padding:rem(5) rem(40);
   position: relative;
+  transition:background-color .3s, border .3s, color .3s;
   &::before{
     content: '';
     background: url(../img/index/blue-arrow.svg) no-repeat;
@@ -19,8 +20,14 @@
     transform: translate(0, -50%);
     width: rem(14);
     height: rem(14);
-    transition: right .3s;
-    &:hover{
+    transition: right .3s, background-color .3s;
+  }
+  &:hover{
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    color: #fff;
+    &::before{
+      background: url(../img/common/white-arrow.svg) no-repeat;
       right: rem(5);
     }
   }

@@ -1,0 +1,40 @@
+@use '../global/' as *;
+
+.l-footer{
+  background-color: $sub-color02;
+  padding-top: rem(30);
+}
+.l-footer__inner{
+}
+.l-footer__contents{
+  background-color: #fff;
+  padding: rem(27) rem(10) rem(20);
+  border-radius: rem(8);
+  @include mq('md'){
+    display: flex;
+    padding:rem(40) rem(47);
+  }
+}
+.l-footer-deco-top{
+  margin-top: rem(100);
+  height: 4vw;
+  width: 100%;
+  position: relative;
+  &:before{
+    content: '';
+    display: inline-block;
+    background: url(../img/index/deco-wave-sp.png) no-repeat top center / cover ;
+    height: inherit;
+    width: 100%;
+    position: absolute;
+  }
+  @include mq('md'){
+    height: 3vw;
+    &:before{
+      background: url(../img/index/deco-wave-pc.png) no-repeat top center / cover ;
+    }
+  }
+}
+.l-footer__nav{
+  margin-top: rem(60);
+}

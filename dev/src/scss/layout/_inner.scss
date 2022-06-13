@@ -1,7 +1,7 @@
 @use '../global/' as *;
 
 .l-inner{
-  width:1280px;
+  width:rem(1080);
   max-width: 100%;
   padding:0 rem(20);
   margin-right: auto;

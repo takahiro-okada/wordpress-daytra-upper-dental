@@ -1,0 +1,38 @@
+@use "../global/" as *;
+
+.p-sub-mv {
+  margin: rem(20) rem(20) 0;
+  display: block;
+  position: relative;
+  height: rem(360);
+  background-position: center;
+  background-size: cover;
+  border-radius: rem(12);
+  &::before {
+    content: "";
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+  }
+}
+.p-sub-mv__contents{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.p-sub-mv__title{
+  font-size: rem(24);
+  color:#fff;
+  letter-spacing: .2em;
+}
+.p-sub-mv__subtitle{
+  font-size: rem(12);
+  letter-spacing: .1em;
+  color: #fff;
+}

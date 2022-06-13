@@ -1,0 +1,37 @@
+@use '../global/' as *;
+
+.section-title{
+  font-size: rem(20);
+  font-weight: bold;
+  line-height: calc(28/20);
+  letter-spacing: .08em;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq('md'){
+    font-size: rem(28);
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: rem(-60);
+    transform: translate(0, -50%);
+    background: url(../img/index/recommend-deco.svg) no-repeat center center / contain;
+    width: rem(50);
+    height: rem(50);
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: rem(-60);
+    transform: translate(0, -50%);
+    background: url(../img/index/recommend-deco.svg) no-repeat center center / contain;
+    width: rem(50);
+    height: rem(50);
+  }
+}

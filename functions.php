@@ -20,6 +20,7 @@ add_action('after_setup_theme', 'my_setup');
 
 //load CSS files
 function add_styles(){
+  wp_enqueue_style( 'M-PLUS-Rounded-1c', 'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700&display=swap', array(), '1.0.0', 'all' );
   wp_enqueue_style('style', get_template_directory_uri() . '/dist/css/style.css', array(),"1.0", false);
 }
 add_action('wp_enqueue_scripts', 'add_styles');

@@ -1,7 +1,13 @@
 @use '../global/' as *;
 
 html {
-  font-size: 62.5%;
+  font-size: 10px;
+  @include mq('md'){
+    font-size: calc(10 / 1200 * 100vw);
+  }
+  @include mq('xl'){
+    font-size: 10px;
+  }
 }
 body{
   font-family: $font-default;
@@ -15,5 +21,3 @@ a{
   cursor: pointer;
   text-decoration: none;
 }
-
-

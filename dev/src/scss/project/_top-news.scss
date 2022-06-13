@@ -1,8 +1,6 @@
 @use '../global/' as *;
 
 .p-top-news{
-  margin-top: rem(20);
-  padding: 0 rem(12);
   @include mq('xl'){
     width: rem(500);
   }
@@ -14,6 +12,7 @@
   padding: 0 0 0 rem(16);
   @include mq('md'){
     width: 100%;
+    padding:0;
   }
 }
 .p-top-news__title{
@@ -29,5 +28,7 @@
 }
 .p-top-news__link{
   color:#888;
+  font-size: rem(10);
   border-bottom: 1px solid #888;
+  letter-spacing: .08em;
 }

@@ -3,7 +3,7 @@
 .c-hamburger{
   border: none;
   background-color: transparent;
-  width: 38px;
+  width: rem(28);
   z-index: 101;
   @include mq('xl'){
     display: none;
@@ -11,8 +11,8 @@
 }
 .c-hamburger span{
   width: 100%;
-  height: 3px;
-  border-radius: 2px;
+  height: rem(3);
+  border-radius: rem(2);
   background-color: $primary-color;
   position: relative;
   transition: ease .3s;
@@ -22,7 +22,7 @@
   top:0;
 }
 .c-hamburger span:nth-child(2){
-  margin: 4px 0;
+  margin: rem(4) 0;
 }
 .c-hamburger span:nth-child(3){
   top:0

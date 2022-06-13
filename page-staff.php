@@ -3,6 +3,10 @@
 ?>
 
 <?php get_header(); ?>
-スタッフ紹介
+
+<?php
+$sub_title = "STAFF";
+get_template_part('./template-parts/sub-mv', null , $sub_title)
+?>
 
 <?php get_footer(); ?>
