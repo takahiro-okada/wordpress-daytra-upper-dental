@@ -1,0 +1,10 @@
+@use '../global/' as *;
+
+
+.c-breadcrumb{
+  display: flex;
+  margin-top: rem(10);
+}
+.c-breadcrumb__item{
+  padding:rem(4);
+}

@@ -32,6 +32,11 @@
     justify-content: flex-end;
   }
 }
+.p-featured__contents--reverse{
+  @include mq('md'){
+    flex-direction: row;
+  }
+}
 .p-featured__body{
   padding:0 rem(20);
   @include mq('md'){
@@ -40,6 +45,16 @@
     width: 33%;
     padding:0;
     margin-left: rem(95);
+  }
+}
+.p-featured__body--reverse{
+  padding:0 rem(20);
+  @include mq('md'){
+    margin-top: rem(32);
+    max-width: 100%;
+    width: 33%;
+    padding:0;
+    margin-right: rem(95);
   }
 }
 .p-featured__image{
@@ -54,4 +69,7 @@
       object-fit: cover;
     }
   }
+}
+.p-featured__image--reverse{
+  margin-left: auto;
 }
