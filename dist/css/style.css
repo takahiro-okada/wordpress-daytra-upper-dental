@@ -1063,6 +1063,10 @@ a {
 	text-align: center;
 }
 
+.l-medical-treatment {
+	margin-top: 10rem;
+}
+
 .p-footer-contents__map {
 	margin-top: 1.5rem;
 }
@@ -1723,6 +1727,164 @@ a {
 	margin-top: 4rem;
 }
 
+.p-medical-toc {
+	margin-top: 6rem;
+}
+
+.p-medical-toc__contents:not(:first-child) {
+	margin-top: 8rem;
+}
+
+.p-medical-toc-contents__heading {
+	align-items: center;
+	display: flex;
+}
+
+.p-medical-toc-contents__title {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.p-medical-toc-contents__tag {
+	background-color: #1391E6;
+	border-radius: 20px;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.4rem;
+	letter-spacing: 0.08em;
+	margin-left: 2.4rem;
+	padding: 0.8rem 1.2rem;
+}
+
+.p-medical-toc-contents__tag--normal {
+	background-color: #1391E6;
+}
+
+.p-medical-toc-contents__tag--special {
+	background-color: #EE5A6D;
+}
+
+.p-medical-toc__list {
+	margin-top: 3.2rem;
+}
+
+.p-medical-toc__item:not(:first-child) {
+	margin-top: 1.6rem;
+}
+
+.p-medical-toc__link {
+	border: 1px solid #1391E6;
+	border-radius: 20px;
+	color: #1391E6;
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 1.7rem 0;
+	text-align: center;
+	width: 100%;
+}
+
+.p-medical-treatment {
+	position: relative;
+}
+
+.p-medical-treatment__inner {
+	background-color: #DFF1FD;
+}
+
+.p-medical-treatment__content {
+	margin-top: 4rem;
+}
+
+.p-medical-treatment-content {
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 2.4rem 2rem 2rem 2rem;
+	position: relative;
+}
+
+.p-medical-treatment-content__tag {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.p-medical-treatment-content__body {
+	margin-top: 4rem;
+}
+
+.p-medical-treatment-content__heading {
+	border-bottom: 1px solid #C2C2C2;
+	padding-bottom: 2rem;
+}
+
+.p-medical-treatment-content__title {
+	font-size: 2rem;
+}
+
+.p-medical-treatment-content__subtitle {
+	color: #1391E6;
+	font-size: 1.4rem;
+}
+
+.p-medical-treatment-content__text {
+	flex-grow: 1;
+	font-size: 1.4rem;
+}
+
+.p-medical-treatment-content__image {
+	margin-top: 2rem;
+	position: relative;
+}
+
+.p-medical-treatment-content__image img {
+	border-radius: 20px;
+}
+
+.medical-tag {
+	color: white;
+	display: inline-block;
+	font-size: 17px;
+	margin: 0;
+	padding: 10px 0;
+	position: absolute;
+	right: 60px;
+	text-align: center;
+	top: 0;
+	width: 80px;
+	z-index: 2;
+}
+
+.medical-tag:before {
+	border-bottom: 10px solid transparent;
+	content: "";
+	height: 0;
+	left: 0;
+	position: absolute;
+	top: 100%;
+	width: 0;
+}
+
+.medical-tag--general {
+	background: #1391E6;
+}
+
+.medical-tag--general:before {
+	border-bottom: 10px solid transparent;
+	border-left: 40px solid #1391E6;
+	border-right: 40px solid #1391E6;
+}
+
+.medical-tag--special {
+	background: #EE5A6D;
+}
+
+.medical-tag--special:before {
+	border-bottom: 10px solid transparent;
+	border-left: 40px solid #EE5A6D;
+	border-right: 40px solid #EE5A6D;
+}
+
 .u-sp-hidden {
 	display: none;
 }
@@ -1789,6 +1951,10 @@ html {
 
 .l-footer-deco-top:before {
 	background: url(../img/index/deco-wave-pc.png) no-repeat top center/cover;
+}
+
+.l-medical-treatment {
+	margin-top: 16rem;
 }
 
 .p-footer-contents__map {
@@ -1999,6 +2165,53 @@ html {
 .p-about-situation__list {
 	grid-template-columns: 1fr 1fr 1fr;
 	margin-top: 6rem;
+}
+
+.p-medical-toc__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.p-medical-toc__item:not(:first-child) {
+	margin-left: 1.6rem;
+	margin-top: 0;
+}
+
+.p-medical-toc__link {
+	padding: 1.7rem 3.2rem;
+}
+
+.p-medical-treatment__content {
+	margin-top: 6rem;
+}
+
+.p-medical-treatment-content {
+	padding: 5.5rem 6rem 6rem 6rem;
+}
+
+.p-medical-treatment-content__body {
+	display: flex;
+}
+
+.p-medical-treatment-content__heading {
+	align-items: center;
+	display: flex;
+	padding-bottom: 4rem;
+}
+
+.p-medical-treatment-content__title {
+	font-size: 2.8rem;
+}
+
+.p-medical-treatment-content__subtitle {
+	margin-left: 20px;
+}
+
+.p-medical-treatment-content__image {
+	flex-shrink: 0;
+	margin-left: 2rem;
+	margin-top: 0;
+	width: 30%;
 }
 
 }

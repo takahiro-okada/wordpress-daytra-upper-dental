@@ -1,0 +1,66 @@
+@use '../global/' as *;
+
+.p-medical-toc{
+  margin-top: rem(60);
+}
+.p-medical-toc__contents{
+  &:not(:first-child){
+    margin-top: rem(80);
+  }
+}
+.p-medical-toc-contents__heading{
+  display: flex;
+  align-items: center;
+}
+.p-medical-toc-contents__title{
+  font-size: rem(20);
+  font-weight: bold;
+}
+.p-medical-toc-contents__tag{
+  margin-left: rem(24);
+  background-color: $primary-color;
+  color: #fff;
+  display: inline-block;
+  padding: rem(8) rem(12);
+  border-radius: 20px;
+  font-size: rem(14);
+  letter-spacing: .08em;
+}
+.p-medical-toc-contents__tag--normal{
+  background-color: $primary-color;
+}
+.p-medical-toc-contents__tag--special{
+  background-color: $accent-color;
+}
+.p-medical-toc__list{
+  margin-top: rem(32);
+  @include mq('md'){
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.p-medical-toc__item{
+  &:not(:first-child){
+    margin-top: rem(16);
+  }
+  @include mq('md'){
+    &:not(:first-child){
+      margin-top: 0;
+      margin-left: rem(16);
+    }
+  }
+}
+.p-medical-toc__link{
+  font-size: rem(20);
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  font-weight: bold;
+  display: inline-block;
+  padding:rem(17) 0;
+  width: 100%;
+  border-radius: 20px;
+  text-align: center;
+  @include mq('md'){
+    padding:rem(17) rem(32);
+  }
+}
