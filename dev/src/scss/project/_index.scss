@@ -19,4 +19,7 @@
 // Sub page
 @use 'sub-mv';
 @use 'sub-about';
-@use 'about-situation'
+@use 'about-situation';
+@use 'medical-toc';
+@use 'medical-treatment';
+@use 'medical-tag';
