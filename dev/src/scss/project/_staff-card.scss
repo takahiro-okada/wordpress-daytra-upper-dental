@@ -1,0 +1,53 @@
+@use '../global/' as *;
+
+.p-staff-card{
+
+}
+.p-staff-card__heading{
+  text-align: center;
+  margin-top: rem(16);
+}
+.p-staff-card__charge{
+  font-size: rem(12);
+}
+.p-staff-card__name{
+  font-size: rem(18);
+}
+.p-staff-card__info{
+  margin-top: rem(16);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.p-staff-card__info-left{
+  width: 50%;
+  padding: rem(17) rem(20);
+  background-color: $sub-color02;
+  font-size: rem(14);
+}
+
+.p-staff-card__info-right{
+  width: 50%;
+  padding: rem(17) rem(20);
+  background-color: #fff;
+  font-size: rem(14);
+}
+
+.p-staff-card__image{
+  position: relative;
+  width: 100%;
+  &::before{
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+  img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}

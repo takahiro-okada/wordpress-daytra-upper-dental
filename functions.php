@@ -39,6 +39,7 @@ add_filter('show_admin_bar', '__return_false');
 // Custom Post
 function custom_page()
 {
+  // 診療案内
   register_post_type(
     'plan',
     array(
@@ -62,6 +63,41 @@ function custom_page()
   register_taxonomy(
     'plan-category',
     'plan',
+    array(
+      'hierarchical' => true,
+      'update_count_callback' => '_update_post_term_count',
+      'label' => 'カテゴリー',
+      'singular_label' => 'カテゴリー',
+      'public' => true,
+      'show_ui' => true,
+      'show_in_rest' => true
+    )
+  );
+
+  // スタッフ
+  register_post_type(
+    'staff',
+    array(
+      'public' => true,
+      'label' => 'スタッフ',
+      'show_in_rest' => true,
+      'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'excerpt', 'custom-fields', 'page-attributes'),
+      'has_archive' => true,
+      'menu_position' => 5,
+      'menu_icon' => 'dashicons-admin-customizer',
+      'hierarchical' => true,
+      'labels' => array(
+        'menu_name' => 'スタッフ',
+        'all_items' => 'スタッフ',
+        'add_new' => '新規ページ追加',
+        'exclude_from_search' => false,
+      ),
+    )
+  );
+
+  register_taxonomy(
+    'staff-category',
+    'staff',
     array(
       'hierarchical' => true,
       'update_count_callback' => '_update_post_term_count',

@@ -1,0 +1,28 @@
+@use '../global/' as *;
+
+.p-staff-members{
+  margin-top: rem(160);
+}
+
+.p-staff-members__content{
+  margin-top: rem(40);
+  @include mq('md'){
+    margin-top: rem(60);
+  }
+}
+.p-staff-members__profession{
+  font-size: rem(16);
+  font-weight: bold;
+  padding-bottom: rem(8);
+  border-bottom: 1px solid #707070;
+}
+.p-staff-members__items{
+  display: grid;
+  grid-template-columns: 1f;
+  gap:40px;
+  margin-top: rem(40);
+  @include mq('md'){
+    grid-template-columns:1fr 1fr 1fr;
+    gap:rem(80);
+  }
+}
