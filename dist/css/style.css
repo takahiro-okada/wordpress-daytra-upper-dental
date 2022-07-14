@@ -1067,6 +1067,10 @@ a {
 	margin-top: 10rem;
 }
 
+.l-greeting {
+	margin-top: 10rem;
+}
+
 .p-footer-contents__map {
 	margin-top: 1.5rem;
 }
@@ -1885,6 +1889,128 @@ a {
 	border-right: 40px solid #EE5A6D;
 }
 
+.p-greeting__contents {
+	margin-top: 4rem;
+}
+
+.p-greeting__image img {
+	-o-object-fit: cover;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.p-greeting-body__title {
+	font-size: 2rem;
+	letter-spacing: 0.08em;
+}
+
+.p-greeting-body__text {
+	font-size: 1.4rem;
+	margin-top: 4rem;
+}
+
+.p-greeting-body__name {
+	text-align: right;
+}
+
+.p-greeting-info__title {
+	border-bottom: 1px solid #333;
+	font-size: 1.6rem;
+}
+
+.p-greeting-table th,
+.p-greeting-table td {
+	font-size: 1.4rem;
+	font-weight: normal;
+}
+
+.p-staff-slider {
+	margin-top: 12rem;
+}
+
+.slick-slide {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.p-staff-members {
+	margin-top: 16rem;
+}
+
+.p-staff-members__content {
+	margin-top: 4rem;
+}
+
+.p-staff-members__profession {
+	border-bottom: 1px solid #707070;
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding-bottom: 0.8rem;
+}
+
+.p-staff-members__items {
+	display: grid;
+	gap: 40px;
+	grid-template-columns: 1f;
+	margin-top: 4rem;
+}
+
+.p-staff-card__heading {
+	margin-top: 1.6rem;
+	text-align: center;
+}
+
+.p-staff-card__charge {
+	font-size: 1.2rem;
+}
+
+.p-staff-card__name {
+	font-size: 1.8rem;
+}
+
+.p-staff-card__info {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 1.6rem;
+	width: 100%;
+}
+
+.p-staff-card__info-left {
+	background-color: #DFF1FD;
+	font-size: 1.4rem;
+	padding: 1.7rem 2rem;
+	width: 50%;
+}
+
+.p-staff-card__info-right {
+	background-color: #fff;
+	font-size: 1.4rem;
+	padding: 1.7rem 2rem;
+	width: 50%;
+}
+
+.p-staff-card__image {
+	position: relative;
+	width: 100%;
+}
+
+.p-staff-card__image::before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.p-staff-card__image img {
+	-o-object-fit: cover;
+	border-radius: 20px;
+	bottom: 0;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
 .u-sp-hidden {
 	display: none;
 }
@@ -2212,6 +2338,32 @@ html {
 	margin-left: 2rem;
 	margin-top: 0;
 	width: 30%;
+}
+
+.p-greeting__contents {
+	display: flex;
+	margin-top: 6rem;
+}
+
+.p-greeting__body {
+	margin-right: 4rem;
+}
+
+.p-greeting__image {
+	margin-left: 4rem;
+}
+
+.p-greeting-body__title {
+	font-size: 2.8rem;
+}
+
+.p-staff-members__content {
+	margin-top: 6rem;
+}
+
+.p-staff-members__items {
+	gap: 8rem;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 }

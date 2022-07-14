@@ -1,0 +1,47 @@
+@use '../global/' as *;
+
+.p-greeting__contents{
+  margin-top: rem(40);
+  @include mq('md'){
+    display: flex;
+    margin-top: rem(60);
+  }
+}
+.p-greeting__body{
+  @include mq('md'){
+    margin-right: rem(40);
+  }
+}
+.p-greeting__image{
+  @include mq('md'){
+    margin-left: rem(40);
+  }
+  img{
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+.p-greeting-body__title{
+  font-size: rem(20);
+  letter-spacing: .08em;
+  @include mq('md'){
+    font-size: rem(28);
+  }
+}
+.p-greeting-body__text{
+  margin-top: rem(40);
+  font-size: rem(14);
+}
+.p-greeting-body__name{
+  text-align: right;
+}
+.p-greeting-info__title{
+  border-bottom: 1px solid #333;
+  font-size: rem(16);
+}
+.p-greeting-table{
+  th,td{
+    font-size: rem(14);
+    font-weight: normal;
+  }
+}
