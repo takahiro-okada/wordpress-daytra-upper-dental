@@ -27,6 +27,12 @@ get_template_part('./template-parts/sub-mv', null, $sub_title)
           ?>
               <article class="p-archive__article p-article">
                 <a class="p-article__link" href="<?php the_permalink() ?>">
+
+                  <?php
+                  if(is_new()){
+                    echo '<span class="p-article__new-tag">NEW</span>';
+                  }
+                  ?>
                   <div class="p-article__image">
                     <?php the_post_thumbnail('thumbnail'); ?>
                   </div>

@@ -8,6 +8,7 @@
 }
 .p-article__link{
   display: flex;
+  position: relative;
 }
 .p-article__image{
   position: relative;
@@ -42,6 +43,23 @@
     font-size: rem(16);
   }
 }
+.p-article__new-tag{
+  position: absolute;
+  z-index: 1;
+  width: rem(40);
+  height: rem(40);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  background-color: #EE5A6D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
 .p-article__tag{
   background-color: $primary-color;
   color: #fff;

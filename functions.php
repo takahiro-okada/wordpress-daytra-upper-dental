@@ -147,13 +147,14 @@ function custom_page()
 }
 add_action('init', 'custom_page');
 
-// svgを使用許可
-function add_file_types_to_uploads($file_types){
-
-  $new_filetypes = array();
-  $new_filetypes['svg'] = 'image/svg+xml';
-  $file_types = array_merge($file_types, $new_filetypes );
-
-  return $file_types;
+// 最新の記事の
+function is_new( $days = 3){
+  $days =3;
+  $today = date_i18n('U');
+  $entry_day = get_the_time('U');
+  $time_difference = date('U',($today - $entry_day)) / 86000;
+  if($days > $time_difference){
+    return true;
   }
-  add_action('upload_mimes','add_file_types_to_uploads');
+  return false;
+}

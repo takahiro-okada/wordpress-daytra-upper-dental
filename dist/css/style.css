@@ -2101,6 +2101,7 @@ a {
 
 .p-article__link {
 	display: flex;
+	position: relative;
 }
 
 .p-article__image {
@@ -2134,6 +2135,23 @@ a {
 	font-size: 1.4rem;
 	line-height: 1.5;
 	margin-top: 0.6rem;
+}
+
+.p-article__new-tag {
+	align-items: center;
+	background-color: #EE5A6D;
+	border-radius: 50%;
+	color: #fff;
+	display: flex;
+	height: 4rem;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	position: absolute;
+	top: 0;
+	transform: translate(-50%, -50%);
+	width: 4rem;
+	z-index: 1;
 }
 
 .p-article__tag {
