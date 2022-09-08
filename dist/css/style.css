@@ -1120,6 +1120,10 @@ a {
 	margin-top: 10rem;
 }
 
+.l-sidenav {
+	margin-top: 10rem;
+}
+
 .l-sidenav__articles {
 	margin-top: 6rem;
 }
@@ -2129,6 +2133,7 @@ a {
 
 .p-article__body {
 	flex-grow: 1;
+	margin-left: 1rem;
 }
 
 .p-article__title {
@@ -2139,7 +2144,7 @@ a {
 
 .p-article__new-tag {
 	align-items: center;
-	background-color: #EE5A6D;
+	background-color: #ee5a6d;
 	border-radius: 50%;
 	color: #fff;
 	display: flex;
@@ -2156,7 +2161,7 @@ a {
 
 .p-article__tag {
 	background-color: #1391E6;
-	border-radius: 0.8rem;
+	border-radius: 10px;
 	color: #fff;
 	display: inline-block;
 	font-size: 1rem;
@@ -2350,6 +2355,8 @@ html {
 }
 
 .l-sidenav {
+	margin-left: 3rem;
+	margin-top: 0;
 	width: 30rem;
 }
 

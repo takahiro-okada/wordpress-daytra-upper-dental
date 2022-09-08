@@ -35,8 +35,6 @@ function add_script()
 }
 add_action('wp_enqueue_scripts', 'add_script');
 
-// add_filter('show_admin_bar', '__return_false');
-
 // Custom Post
 function custom_page()
 {
@@ -147,7 +145,7 @@ function custom_page()
 }
 add_action('init', 'custom_page');
 
-// 最新の記事の
+// Counting days from posting
 function is_new( $days = 3){
   $days =3;
   $today = date_i18n('U');
@@ -158,3 +156,6 @@ function is_new( $days = 3){
   }
   return false;
 }
+
+// global $wp_rewrite;
+// $wp_rewrite->flush_rules();

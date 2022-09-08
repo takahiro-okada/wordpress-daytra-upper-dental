@@ -15,16 +15,7 @@ get_template_part('./template-parts/sub-mv', null, $sub_title)
     <div class="p-archive__wrapper">
       <div class="p-archive__contents">
         <div class="p-archive__list">
-          <?php
-          $args = array(
-            'post_type' => "blog",
-            'posts_per_page' => 10,
-          );
-          $staff_blog_query = new WP_Query( $args );
-          if($staff_blog_query->have_posts() ):
-            while( $staff_blog_query -> have_posts()):
-            $staff_blog_query->the_post();
-          ?>
+        <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
               <article class="p-archive__article p-article">
                 <a class="p-article__link" href="<?php the_permalink() ?>">
 
@@ -34,6 +25,7 @@ get_template_part('./template-parts/sub-mv', null, $sub_title)
                   }
                   ?>
                   <div class="p-article__image">
+
                     <?php the_post_thumbnail('thumbnail'); ?>
                   </div>
                   <div class="p-article__body">
@@ -47,7 +39,7 @@ get_template_part('./template-parts/sub-mv', null, $sub_title)
                   </div>
                 </a>
               </article>
-              <?php endwhile; endif; wp_reset_postdata();?>
+              <?php endwhile; endif;?>
 
               <?php get_template_part('./template-parts/pagination') ?>
 
