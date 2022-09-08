@@ -1,0 +1,16 @@
+@use '../global/' as *;
+
+.l-sidenav{
+  @include mq('md'){
+    width: rem(300);
+  }
+}
+.l-sidenav__info{
+
+}
+.l-sidenav__articles{
+  margin-top: rem(60);
+}
+.l-sidenav__category{
+  margin-top: rem(60);
+}

@@ -197,7 +197,7 @@
         <?php endif; ?>
       </ul>
       <div class="p-blog__button">
-        <a class="c-button">スタッフブログ一覧はこちら</a>
+        <a href="<?php echo home_url(); ?>/blog" class="c-button">スタッフブログ一覧はこちら</a>
       </div>
     </div>
   </section>

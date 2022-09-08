@@ -24,7 +24,7 @@
         <div class="l-header-contents__item"><a href="<?php echo home_url(); ?>/about" class="l-header-contents__link"><?php get_template_part( 'template-parts/icons/icon-building' ); ?><span class="l-header-contents__text">当院について</span></a></div>
         <div class="l-header-contents__item"><a href="<?php echo home_url(); ?>/medical" class="l-header-contents__link"><?php get_template_part( 'template-parts/icons/icon-file' ); ?><span class="l-header-contents__text">診療案内</span></a></div>
         <div class="l-header-contents__item"><a href="<?php echo home_url(); ?>/staff" class="l-header-contents__link"><?php get_template_part( 'template-parts/icons/icon-staff' ); ?><span class="l-header-contents__text">スタッフ紹介</span></a></div>
-        <div class="l-header-contents__item"><a href="<?php echo home_url(); ?>/news" class="l-header-contents__link"><?php get_template_part( 'template-parts/icons/icon-staffblog' ); ?><span class="l-header-contents__text">スタッフブログ</span></a></div>
+        <div class="l-header-contents__item"><a href="<?php echo home_url(); ?>/blog" class="l-header-contents__link"><?php get_template_part( 'template-parts/icons/icon-staffblog' ); ?><span class="l-header-contents__text">スタッフブログ</span></a></div>
         <div class="l-header-contents__item"><a href="<?php echo home_url(); ?>/contact" class="l-header-contents__link"><?php get_template_part( 'template-parts/icons/icon-mail' ); ?><span class="l-header-contents__text">お問い合わせ</span></a></div>
       </div>
       <div class="l-header__cta l-header-cta">

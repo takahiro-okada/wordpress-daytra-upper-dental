@@ -1,29 +1,35 @@
 // common component
-@use 'footer';
-@use 'footer-nav';
+@use 'p-footer';
+@use 'p-footer-nav';
 
 // Top page
-@use 'slider';
-@use 'top';
-@use 'top-news';
-@use 'top-news-post';
-@use 'featured';
-@use 'featured-body';
-@use 'recommend';
-@use 'recommend-item';
-@use 'plan';
-@use 'plan-item';
-@use 'blog';
-@use 'blog-card';
+@use 'p-slider';
+@use 'p-top';
+@use 'p-top-news';
+@use 'p-top-news-post';
+@use 'p-featured';
+@use 'p-featured-body';
+@use 'p-recommend';
+@use 'p-recommend-item';
+@use 'p-plan';
+@use 'p-plan-item';
+@use 'p-blog';
+@use 'p-blog-card';
 
 // Sub page
-@use 'sub-mv';
-@use 'sub-about';
-@use 'about-situation';
-@use 'medical-toc';
-@use 'medical-treatment';
-@use 'medical-tag';
-@use 'greeting';
-@use 'staff-slider';
-@use 'staff-members';;
-@use 'staff-card';
+@use 'p-sub-mv';
+@use 'p-sub-about';
+@use 'p-about-situation';
+@use 'p-medical-toc';
+@use 'p-medical-treatment';
+@use 'p-medical-tag';
+@use 'p-greeting';
+@use 'p-staff-slider';
+@use 'p-staff-members';;
+@use 'p-staff-card';
+@use 'p-archive';
+@use 'p-article';
+@use 'p-sidenav-articles';
+@use 'p-sidenav-new-article';
+@use 'p-sidenav-info';
+@use 'p-sidenav-category'
