@@ -15,8 +15,6 @@ get_template_part('./template-parts/sub-mv', null, "お知らせ")
       <div class="p-archive__contents">
         <div class="p-archive__list">
 
-
-
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <article class="p-archive__article p-article">
 
@@ -52,9 +50,7 @@ get_template_part('./template-parts/sub-mv', null, "お知らせ")
 
         </div>
       </div>
-
       <?php get_sidebar(); ?>
-
     </div>
   </div>
 </div>
