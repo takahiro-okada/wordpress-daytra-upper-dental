@@ -1,0 +1,16 @@
+@use '../global/' as *;
+
+.p-reservation-heading__body{
+  margin-top: rem(30);
+}
+.p-reservation-heading__title{
+  font-size: rem(20);
+  font-weight: bold;
+  @include mq('md'){
+   font-size: rem(28);
+  }
+}
+.p-reservation-heading__text{
+  font-size: rem(14);
+  margin-top: rem(28);
+}

@@ -1,0 +1,13 @@
+@use '../global/' as *;
+
+.c-link{
+  color: $primary-color;
+  font-size: rem(14);
+  font-weight: normal;
+  &.c-link--arrow::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+    margin-left: .5em;
+  }
+}

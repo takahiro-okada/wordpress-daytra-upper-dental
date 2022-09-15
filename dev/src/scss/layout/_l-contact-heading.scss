@@ -1,0 +1,17 @@
+@use "../global/" as *;
+
+.l-contact-heading {
+  margin-top: rem(60);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+.p-contact-heading__text {
+  font-size: rem(14);
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+.p-contact__heading--attention {
+  color: #ee5a6d;
+}

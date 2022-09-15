@@ -1,0 +1,12 @@
+@use "../global/" as *;
+// For contact form7
+.breadcrumbs__contents {
+  font-size: rem(14);
+  color: #C2C2C2;
+  span {
+    color: #C2C2C2;
+  }
+  .current-item{
+    color: $font-color;
+  }
+}

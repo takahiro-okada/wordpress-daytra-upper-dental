@@ -9,8 +9,12 @@ $sub_title = "ABOUT OUR CLINIC";
 get_template_part('./template-parts/sub-mv', null, $sub_title)
 ?>
 
+<div class="l-inner l-breadcrums">
+  <?php get_template_part('./template-parts/breadcrums') ?>
+</div>
+
 <div class="p-sub-about__title">
-  <h2 class="section-title">ポリシーと特徴</h2>
+  <h2 class="c-section-title">ポリシーと特徴</h2>
 </div>
 
 
@@ -58,7 +62,7 @@ get_template_part('./template-parts/sub-mv', null, $sub_title)
 <section class="p-about-situation">
   <div class="p-about-situation__inner l-inner">
     <div class="p-about-situation__title">
-      <h2 class="section-title">院内の様子</h2>
+      <h2 class="c-section-title">院内の様子</h2>
       <div class="p-about-situation__list">
         <div class="p-about-situation__item">
           <img src="<?php echo get_template_directory_uri(); ?>/dist/img/about/about-situation_1.png">

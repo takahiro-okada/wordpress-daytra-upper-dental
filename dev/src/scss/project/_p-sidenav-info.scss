@@ -1,0 +1,27 @@
+@use '../global/' as *;
+
+.p-sidenav-info{
+
+}
+
+.p-sidenav-info__image{
+  margin-top: rem(20);
+}
+
+.p-sidenav-info__name{
+  font-size: rem(16);
+  font-weight: bold;
+  margin-top: rem(20);
+  line-height: calc( 24/ 16 );
+}
+
+.p-sidenav-info__description{
+  font-size: rem(14);
+  line-height: calc( 24/ 14 );
+  margin-top: rem(14);
+}
+
+.p-sidenav-info__link{
+  display: inline-block;
+  margin-top: rem(14);
+}

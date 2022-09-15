@@ -1,0 +1,87 @@
+@use "../global/" as *;
+
+.c-form {
+}
+.c-form__item {
+  border-bottom: 1px solid #dddddd;
+  padding: rem(20) 0;
+  &:first-child {
+    border-top: 1px solid #dddddd;
+  }
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+  }
+}
+.c-form__term {
+  @include mq("md") {
+    font-size: rem(16);
+    width: rem(300);
+  }
+}
+.c-form__desc {
+  width: 100%;
+}
+.c-form__input {
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  padding: rem(13) rem(16);
+  width: 100%;
+  font-size: rem(16);
+}
+.c-form__required {
+  background-color: #ee5a6d;
+  color: #fff;
+  font-size: rem(12);
+  font-weight: bold;
+  padding: rem(5) rem(5);
+  border-radius: 5px;
+  margin-left: rem(10);
+}
+.c-form__textarea {
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  padding: rem(13) rem(16);
+  width: 100%;
+  font-size: rem(16);
+  min-height: rem(160);
+}
+.c-form__button-wrapper {
+  margin-top: rem(60);
+  text-align: center;
+}
+.c-form__radio-label {
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+  &::before {
+    background-color: #fff;
+    border: 1px solid $primary-color;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+  }
+  &::after {
+    background-color: #ddd;
+    border-radius: 50%;
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    left: 7px;
+  }
+}
+.c-form__radio {
+  visibility: hidden;
+}
+.c-form__explain {
+  font-size: rem(11);
+  color: #888888;
+  display: block;
+}

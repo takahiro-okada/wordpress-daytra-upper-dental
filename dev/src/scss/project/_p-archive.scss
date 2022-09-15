@@ -1,0 +1,47 @@
+@use "../global/" as *;
+
+.p-archive{
+  margin-top: rem(60);
+  @include mq('md'){
+    margin-top: rem(80);
+  }
+}
+
+.p-archive__wrapper{
+  @include mq('md'){
+   display: flex;
+  }
+}
+
+.p-archive__contents{
+  @include mq('md'){
+    width: calc(100% - 300px - 30px);
+  }
+}
+
+.p-archive__sidenav{
+  @include mq('md'){
+    margin-left: rem(30);
+    width: rem(300);
+  }
+}
+
+.p-archive__pagination{
+  margin-top: rem(100);
+  .nav-links{
+    text-align: center;
+  }
+  .page-numbers{
+    display: inline-block;
+    background-color: #fff;
+    color: $primary-color;
+    padding: rem(10) rem(18);
+    border-radius: 4px;
+    border: 1px solid $primary-color;
+    font-size: rem(14);
+  }
+  .page-numbers.current{
+    background-color: $primary-color;
+    color: #fff;
+  }
+}

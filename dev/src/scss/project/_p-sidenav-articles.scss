@@ -1,0 +1,13 @@
+@use '../global/' as *;
+
+.p-sidenav-articles{
+
+}
+.p-sidenav-articles__contents{
+  margin-top: rem(20);
+}
+.p-sidenav-articles__card{
+  &:not(:first-child){
+    margin-top: rem(20);
+  }
+}
