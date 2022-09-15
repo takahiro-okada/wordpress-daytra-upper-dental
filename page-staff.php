@@ -9,10 +9,14 @@ $sub_title = "STAFF";
 get_template_part('./template-parts/sub-mv', null, $sub_title)
 ?>
 
+<div class="l-inner l-breadcrums">
+  <?php get_template_part('./template-parts/breadcrums') ?>
+</div>
+
 <section class="l-greeting p-greeting">
   <div class="l-inner">
     <div class="p-greeting__title">
-      <h2 class="section-title">院長のあいさつ</h2>
+      <h2 class="c-section-title">院長のあいさつ</h2>
     </div>
     <div class="p-greeting__contents">
       <div class="p-greeting__body p-greeting-body">
@@ -76,73 +80,75 @@ get_template_part('./template-parts/sub-mv', null, $sub_title)
 
 <!-- Logic -->
 <?php
-  $dental_hygienist_posts = array();
-  $args = Array (
-    'post_type' => 'staff',
-    'post_status' => 'publish',
-    'order' => 'DESC',
-    'tax_query'=> array(
-      array(
-        'taxonomy'=>'staff-category',
-        'field'=>'slug',
-        'terms'=> 'dental-hygienist'
-      )
+$dental_hygienist_posts = array();
+$args = array(
+  'post_type' => 'staff',
+  'post_status' => 'publish',
+  'order' => 'DESC',
+  'tax_query' => array(
+    array(
+      'taxonomy' => 'staff-category',
+      'field' => 'slug',
+      'terms' => 'dental-hygienist'
     )
-  );
-  $dental_hygienist_query = new WP_Query($args);
-  if ( $dental_hygienist_query->have_posts() ) : while ( $dental_hygienist_query->have_posts() ) : $dental_hygienist_query->the_post();
+  )
+);
+$dental_hygienist_query = new WP_Query($args);
+if ($dental_hygienist_query->have_posts()) : while ($dental_hygienist_query->have_posts()) : $dental_hygienist_query->the_post();
     $dental_hygienist_items = array(
       'id' => get_the_ID(),
       'title' => get_the_title(),
-      'content'=>get_the_content(),
-      'image'=>get_the_post_thumbnail(get_the_ID(),'large'),
-      'meta_area'=>post_custom('area'),
-      'meta_hobby'=>post_custom('hobby'),
-      'meta_favorite_food'=>post_custom('favorite_food'),
+      'content' => get_the_content(),
+      'image' => get_the_post_thumbnail(get_the_ID(), 'large'),
+      'meta_area' => post_custom('area'),
+      'meta_hobby' => post_custom('hobby'),
+      'meta_favorite_food' => post_custom('favorite_food'),
     );
     $dental_hygienist_posts[] = $dental_hygienist_items;
-    endwhile; endif;
-    wp_reset_postdata();
+  endwhile;
+endif;
+wp_reset_postdata();
 ?>
 <?php
-  $dental_assistant_posts = array();
-  $args = Array (
-    'post_type' => 'staff',
-    'post_status' => 'publish',
-    'order' => 'DESC',
-    'tax_query'=> array(
-      array(
-        'taxonomy'=>'staff-category',
-        'field'=>'slug',
-        'terms'=> 'dental-assistant'
-      )
+$dental_assistant_posts = array();
+$args = array(
+  'post_type' => 'staff',
+  'post_status' => 'publish',
+  'order' => 'DESC',
+  'tax_query' => array(
+    array(
+      'taxonomy' => 'staff-category',
+      'field' => 'slug',
+      'terms' => 'dental-assistant'
     )
-  );
-  $dental_assistant_query = new WP_Query($args);
-  if ( $dental_assistant_query->have_posts() ) : while ( $dental_assistant_query->have_posts() ) : $dental_assistant_query->the_post();
+  )
+);
+$dental_assistant_query = new WP_Query($args);
+if ($dental_assistant_query->have_posts()) : while ($dental_assistant_query->have_posts()) : $dental_assistant_query->the_post();
     $dental_assistant_items = array(
       'id' => get_the_ID(),
       'title' => get_the_title(),
-      'content'=>get_the_content(),
-      'image'=>get_the_post_thumbnail(get_the_ID(),'large'),
-      'meta_area'=>post_custom('area'),
-      'meta_hobby'=>post_custom('hobby'),
-      'meta_favorite_food'=>post_custom('favorite_food'),
+      'content' => get_the_content(),
+      'image' => get_the_post_thumbnail(get_the_ID(), 'large'),
+      'meta_area' => post_custom('area'),
+      'meta_hobby' => post_custom('hobby'),
+      'meta_favorite_food' => post_custom('favorite_food'),
     );
     $dental_assistant_posts[] = $dental_assistant_items;
-    endwhile; endif;
-    wp_reset_postdata();
+  endwhile;
+endif;
+wp_reset_postdata();
 ?>
 
 <section class="p-staff-members">
   <div class="l-inner">
     <div class="p-staff-members__title">
-      <h2 class="section-title">スタッフ紹介</h2>
+      <h2 class="c-section-title">スタッフ紹介</h2>
     </div>
     <div class="p-staff-members__content">
       <h3 class="p-staff-members__profession">歯科衛生士</h3>
       <ul class="p-staff-members__items">
-        <?php foreach($dental_hygienist_posts as $dental_hygienist): setup_postdata($dental_hygienist)?>
+        <?php foreach ($dental_hygienist_posts as $dental_hygienist) : setup_postdata($dental_hygienist) ?>
           <li class="p-staff-members__item p-staff-card">
             <div class="p-staff-card__image">
               <?php echo $dental_hygienist['image'] ?>
@@ -168,7 +174,7 @@ get_template_part('./template-parts/sub-mv', null, $sub_title)
     <div class="p-staff-members__content">
       <h3 class="p-staff-members__profession">歯科衛助手</h3>
       <ul class="p-staff-members__items">
-        <?php foreach($dental_assistant_posts as $dental_assistant): setup_postdata($dental_assistant)?>
+        <?php foreach ($dental_assistant_posts as $dental_assistant) : setup_postdata($dental_assistant) ?>
           <li class="p-staff-members__item p-staff-card">
             <div class="p-staff-card__image">
               <?php echo $dental_assistant['image'] ?>

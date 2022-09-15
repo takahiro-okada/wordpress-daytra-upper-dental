@@ -146,12 +146,13 @@ function custom_page()
 add_action('init', 'custom_page');
 
 // Counting days from posting
-function is_new( $days = 3){
-  $days =3;
+function is_new($days = 3)
+{
+  $days = 3;
   $today = date_i18n('U');
   $entry_day = get_the_time('U');
-  $time_difference = date('U',($today - $entry_day)) / 86000;
-  if($days > $time_difference){
+  $time_difference = date('U', ($today - $entry_day)) / 86000;
+  if ($days > $time_difference) {
     return true;
   }
   return false;
@@ -159,3 +160,23 @@ function is_new( $days = 3){
 
 // global $wp_rewrite;
 // $wp_rewrite->flush_rules();
+
+function redirect_to_thanks_page()
+{
+  $homeUrl = home_url();
+  echo <<< EOD
+  <script>
+  document.addEventListener( 'wpcf7mailsent', function( event ) {
+    location = '{$homeUrl}/thanks/';
+  }, false );
+  </script>
+  EOD;
+}
+add_action('wp_footer', 'redirect_to_thanks_page');
+
+// Contact Form 7の自動pタグ無効
+add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
+function wpcf7_autop_return_false()
+{
+  return false;
+}

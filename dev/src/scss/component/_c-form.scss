@@ -38,7 +38,7 @@
   border-radius: 5px;
   margin-left: rem(10);
 }
-.c-form__textarea{
+.c-form__textarea {
   background-color: #f6f6f6;
   border-radius: 5px;
   padding: rem(13) rem(16);
@@ -46,7 +46,42 @@
   font-size: rem(16);
   min-height: rem(160);
 }
-.c-form__button-wrapper{
+.c-form__button-wrapper {
   margin-top: rem(60);
   text-align: center;
+}
+.c-form__radio-label {
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+  &::before {
+    background-color: #fff;
+    border: 1px solid $primary-color;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+  }
+  &::after {
+    background-color: #ddd;
+    border-radius: 50%;
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    left: 7px;
+  }
+}
+.c-form__radio {
+  visibility: hidden;
+}
+.c-form__explain {
+  font-size: rem(11);
+  color: #888888;
+  display: block;
 }

@@ -9,6 +9,10 @@ $sub_title = "NEWS";
 get_template_part('./template-parts/sub-mv', null, "お知らせ")
 ?>
 
+<div class="l-inner l-breadcrums">
+  <?php get_template_part('./template-parts/breadcrums') ?>
+</div>
+
 <div class="p-archive">
   <div class="l-inner">
     <div class="p-archive__wrapper">

@@ -1,0 +1,51 @@
+@use "../global/" as *;
+
+$radio-size: 16px;
+$radio-checked-size: 1px;
+$radio-border-radius: 8px;
+$radio-border-color: #ccc;
+
+.c-radio {
+  padding-left: $radio-size + 6px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.c-radio__label {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-size: rem(14);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -($radio-size + 6px);
+    display: block;
+    width: $radio-size;
+    height: $radio-size;
+    box-sizing: border-box;
+    transform: translateY(-50%);
+    pointer-events: none;
+    background-color: #fff;
+    border: 1px solid $radio-border-color;
+    border-radius: $radio-border-radius;
+  }
+}
+.c-radio__input {
+  &:checked + .c-radio__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -($radio-size + 3px);
+    display: block;
+    width: $radio-size;
+    height: $radio-size;
+    box-sizing: border-box;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border-radius: $radio-border-radius;
+    width: 10px;
+    height: 10px;
+    background-color: $primary-color;
+  }
+}

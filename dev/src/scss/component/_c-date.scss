@@ -1,0 +1,8 @@
+@use '../global/' as *;
+
+.c-date{
+
+}
+.c-date__input:not(:first-child){
+  margin-top: rem(20);
+}

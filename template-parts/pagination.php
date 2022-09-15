@@ -1,4 +1,3 @@
-
 <div class="p-archive__pagination">
 
   <?php

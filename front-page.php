@@ -28,6 +28,7 @@
     </div>
   </section>
 
+
   <!-- top -->
   <section class="p-top">
     <div class="p-top__inner l-inner">
@@ -91,7 +92,7 @@
   <section class="l-recommend p-recommend">
     <div class="l-inner">
       <div class="p-recommend__title">
-        <h2 class="section-title">当院の３つのおすすめ</h2>
+        <h2 class="c-section-title">当院の３つのおすすめ</h2>
       </div>
       <ul class="p-recommend__list">
         <li class="p-recommend__item p-recommend-item">
@@ -120,7 +121,7 @@
     <div class="p-plan__bg">
       <div class="p-plan__inner l-inner">
         <div class="p-plan__title">
-          <h2 class="section-title">診療案内</h2>
+          <h2 class="c-section-title">診療案内</h2>
         </div>
         <div class="p-plan__list">
           <div class="p-plan__item p-plan-item">
@@ -152,7 +153,7 @@
   <section class="l-blog p-blog">
     <div class="p-blog__inner l-inner">
       <div class="p-blog__title">
-        <h2 class="section-title">スタッフブログ</h2>
+        <h2 class="c-section-title">スタッフブログ</h2>
       </div>
       <ul class="p-blog__cards">
         <?php
@@ -171,13 +172,13 @@
               <a href="<?php ?>" class="p-blog-card__link">
 
                 <?php
-                  $days = 3;
-                  $now = date_i18n('U');
-                  $entry = get_the_time('U');
-                  $term = date('U', ($now - $entry)) / 86400;
-                  if ($days > $term) {
-                    echo '<span class="p-blog-card__newtag">NEW</span>';
-                  }
+                $days = 3;
+                $now = date_i18n('U');
+                $entry = get_the_time('U');
+                $term = date('U', ($now - $entry)) / 86400;
+                if ($days > $term) {
+                  echo '<span class="p-blog-card__newtag">NEW</span>';
+                }
                 ?>
 
                 <div class="p-blog-card__thum">
