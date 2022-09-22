@@ -1,14 +1,20 @@
-@use '../global/' as *;
+@use "../global/" as *;
 
 .p-entry {
 }
 .p-entry__title {
   font-size: rem(20);
   letter-spacing: 0.08em;
+  line-height: calc(40 / 28);
+  font-weight: bold;
+  @include mq("md") {
+    font-size: rem(28);
+  }
 }
 .p-entry__meta {
   display: flex;
   align-items: center;
+  margin-top: rem(10);
 }
 .p-entry__date {
   color: $primary-color;
@@ -33,7 +39,10 @@
   display: inline-block;
   padding: rem(2) rem(8);
   border-radius: 10px;
-  margin-left: rem(32);
+  margin-left: rem(25);
+  @include mq('md'){
+    padding: rem(2) rem(16);
+  }
 }
 .p-entry-content {
   margin-top: rem(60);

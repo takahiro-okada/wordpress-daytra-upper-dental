@@ -8,6 +8,17 @@
 }
 
 .c-date .wpcf7-form-control-wrap:not(:first-child){
-  margin-top: rem(20);
+  margin-top: rem(10);
   display: block;
+}
+
+.c-date input[type="date"]{
+  background-image: url(../img/icons/icon-date.svg);
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+
+.c-date input[type="date"]::-webkit-calendar-picker-indicator{
+  opacity: 0;
 }

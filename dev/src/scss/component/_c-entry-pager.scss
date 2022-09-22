@@ -1,0 +1,48 @@
+@use '../global/' as *;
+
+.c-entry-pager{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-entry-pager__back{
+  font-size: rem(14);
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  padding: rem(5) rem(17);
+  border-radius: 5px;
+}
+.c-entry-pager__prev-link{
+  margin-right: rem(20);
+  background-color: $primary-color;
+  padding: rem(4) rem(17);
+  border-radius: 5px;
+  color: #fff;
+  font-size: rem(14);
+  &::before{
+    content: '';
+    display: inline-block;
+    background: url(../img/icons/icon-arrow-left.svg) no-repeat;
+    width: rem(16);
+    height: rem(16);
+    margin-right: rem(10);
+    vertical-align: middle;
+  }
+}
+.c-entry-pager__next-link{
+  background-color: $primary-color;
+  margin-left: rem(10);
+  padding: rem(4) rem(17);
+  border-radius: 5px;
+  color: #fff;
+  font-size: rem(14);
+  &::after{
+    content: '';
+    display: inline-block;
+    background: url(../img/icons/icon-arrow-right.svg) no-repeat;
+    width: rem(16);
+    height: rem(16);
+    margin-left: rem(10);
+    vertical-align: middle;
+  }
+}
