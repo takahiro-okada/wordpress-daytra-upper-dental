@@ -2,4 +2,7 @@
 
 .l-breadcrums{
   margin-top: rem(14);
+  @include mq('md'){
+    margin: rem(7) rem(90) 0;
+  }
 }

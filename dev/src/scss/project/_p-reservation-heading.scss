@@ -1,16 +1,25 @@
-@use '../global/' as *;
+@use "../global/" as *;
 
-.p-reservation-heading__body{
+.p-reservation-heading__tel {
   margin-top: rem(30);
 }
-.p-reservation-heading__title{
+.p-reservation-heading__title {
   font-size: rem(20);
   font-weight: bold;
-  @include mq('md'){
-   font-size: rem(28);
+  letter-spacing: 0.08em;
+  @include mq("md") {
+    font-size: rem(28);
   }
 }
-.p-reservation-heading__text{
+.p-reservation-heading__info {
+  margin-top: rem(15);
+}
+.p-reservation-heading__text {
   font-size: rem(14);
   margin-top: rem(28);
+  line-height: calc(24 / 14);
+}
+
+.p-reservation-heading__email{
+  margin-top: rem(30);
 }

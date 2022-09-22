@@ -16,22 +16,18 @@
 
   &:before{
     content: '';
-    position: absolute;
-    top: 50%;
-    left: rem(-60);
-    transform: translate(0, -50%);
+    display: inline-block;
     background: url(../img/index/recommend-deco.svg) no-repeat center center / contain;
-    width: rem(50);
-    height: rem(50);
+    width: rem(70);
+    height: rem(20);
+    margin-right: rem(28);
   }
   &:after{
     content: '';
-    position: absolute;
-    top: 50%;
-    right: rem(-60);
-    transform: translate(0, -50%);
+    display: inline-block;
     background: url(../img/index/recommend-deco.svg) no-repeat center center / contain;
-    width: rem(50);
-    height: rem(50);
+    width: rem(70);
+    height: rem(20);
+    margin-left: rem(28);
   }
 }

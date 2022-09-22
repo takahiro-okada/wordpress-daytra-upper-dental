@@ -3,12 +3,14 @@
 .p-reservation{
 
 }
+.p-reservation__inner{
+  width: rem(768);
+}
 .p-reservation__heading{
-
 }
 .p-reservation__form{
   margin-top: rem(100);
   @include mq('md'){
-    margin-top: rem(160);
+    margin-top: rem(156);
   }
 }

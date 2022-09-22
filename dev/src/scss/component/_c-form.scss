@@ -4,7 +4,6 @@
 }
 .c-form__item {
   border-bottom: 1px solid #dddddd;
-  padding: rem(20) 0;
   &:first-child {
     border-top: 1px solid #dddddd;
   }
@@ -14,13 +13,15 @@
   }
 }
 .c-form__term {
+  padding: rem(37) 0 rem(35);
   @include mq("md") {
     font-size: rem(16);
-    width: rem(300);
+    width: rem(350);
   }
 }
 .c-form__desc {
   width: 100%;
+  padding: rem(20) 0;
 }
 .c-form__input {
   background-color: #f6f6f6;
@@ -34,9 +35,9 @@
   color: #fff;
   font-size: rem(12);
   font-weight: bold;
-  padding: rem(5) rem(5);
+  padding: rem(3) rem(6);
   border-radius: 5px;
-  margin-left: rem(10);
+  margin-left: rem(16);
 }
 .c-form__textarea {
   background-color: #f6f6f6;
@@ -44,10 +45,10 @@
   padding: rem(13) rem(16);
   width: 100%;
   font-size: rem(16);
-  min-height: rem(160);
+  height: rem(220) !important;
 }
 .c-form__button-wrapper {
-  margin-top: rem(60);
+  margin-top: rem(68);
   text-align: center;
 }
 .c-form__radio-label {
@@ -84,4 +85,8 @@
   font-size: rem(11);
   color: #888888;
   display: block;
+}
+
+.wpcf7-spinner{
+  display: none;
 }

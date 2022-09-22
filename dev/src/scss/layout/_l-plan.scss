@@ -13,7 +13,7 @@
     position: absolute;
   }
   @include mq("md") {
-    height: 16vw;
+    height: 15.5vw;
     &:before {
       background: url(../img/index/deco-plan-top-pc.png) no-repeat top center / cover;
     }
@@ -37,11 +37,11 @@
     left: 0;
   }
   @include mq("md") {
-    height: 9vw;
+    height: 8vw;
     &:before {
       background: url(../img/index/deco-plan-bottom-pc.png);
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       background-position: top center;
     }
   }

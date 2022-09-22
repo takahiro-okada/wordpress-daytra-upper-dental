@@ -9,11 +9,11 @@ $sub_title = "STAFF";
 get_template_part('./template-parts/sub-mv', null, $sub_title)
 ?>
 
-<div class="l-inner l-breadcrums">
+<div class="l-breadcrums">
   <?php get_template_part('./template-parts/breadcrums') ?>
 </div>
 
-<section class="l-greeting p-greeting">
+<section class="l-sub-staff__greeting p-greeting">
   <div class="l-inner">
     <div class="p-greeting__title">
       <h2 class="c-section-title">院長のあいさつ</h2>
@@ -22,9 +22,12 @@ get_template_part('./template-parts/sub-mv', null, $sub_title)
       <div class="p-greeting__body p-greeting-body">
         <h3 class="p-greeting-body__title">気軽に相談できる<br>街の歯医者さんでありたい。</h3>
         <div class="p-greeting-body__text">
-          当院は治療はもちろん、予防歯科にも力を入れておりますので、お口に関する相談だけでもお越しいただきたいと考えております。<br>
-          <br>
-          「患部を直すこと」より「未然に防ぐこと」が最も良い歯科医療と言えますので、些細なことでも気軽に話せる街の歯医者さんとして、明るい街づくりに貢献していきたいと考えております。
+          <p>
+            当院は治療はもちろん、予防歯科にも力を入れておりますので、お口に関する相談だけでもお越しいただきたいと考えております。<br>
+          </p>
+          <p>
+            「患部を直すこと」より「未然に防ぐこと」が最も良い歯科医療と言えますので、些細なことでも気軽に話せる街の歯医者さんとして、明るい街づくりに貢献していきたいと考えております。
+          </p>
         </div>
         <div class="p-greeting-body__name">みなみ歯科クリニック<br>院長　南 俊雄</div>
         <div class="p-greeting__infos">
@@ -172,7 +175,7 @@ wp_reset_postdata();
     </div>
 
     <div class="p-staff-members__content">
-      <h3 class="p-staff-members__profession">歯科衛助手</h3>
+      <h3 class="p-staff-members__profession">歯科助手</h3>
       <ul class="p-staff-members__items">
         <?php foreach ($dental_assistant_posts as $dental_assistant) : setup_postdata($dental_assistant) ?>
           <li class="p-staff-members__item p-staff-card">

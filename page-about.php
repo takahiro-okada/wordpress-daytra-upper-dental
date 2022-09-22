@@ -9,7 +9,7 @@ $sub_title = "ABOUT OUR CLINIC";
 get_template_part('./template-parts/sub-mv', null, $sub_title)
 ?>
 
-<div class="l-inner l-breadcrums">
+<div class="l-breadcrums">
   <?php get_template_part('./template-parts/breadcrums') ?>
 </div>
 
@@ -39,7 +39,7 @@ get_template_part('./template-parts/sub-mv', null, $sub_title)
   </div>
 </section>
 
-<section class="l-featured p-featured">
+<section class="l-featured--second">
   <div class="p-featured__inner">
     <div class="p-featured__contents p-featured__contents--reverse">
       <div class="p-featured__body p-featured__body--reverse">

@@ -1,49 +1,135 @@
-@use '../global/' as *;
+@use "../global/" as *;
 
-$checkbox-size:16px;
-$checkbox-border-radius:4px;
+$checkbox-size: 24px;
+$checkbox-border-radius: 0;
 $checkbox-bg: #3e82ff;
-$checkbox-border-color:#ccc;
+$checkbox-border-color: $primary-color;
 
-.c-checkbox{
+// .c-checkbox{
+//   padding-left: $checkbox-size + 6px;
+//   margin-right:10px;
+//   margin-bottom: 8px;
+//   display: inline-block;
+//   font-size: rem(14);
+//   &.c-checkbox__vertical{
+//     display: block;
+//   }
+//   .c-checkbox__input{
+
+//     &:checked +  .c-checkbox__label::before{
+//       color: #fff;
+//       border-color: $checkbox-bg;
+//       background-color: $checkbox-bg;
+//     }
+//     &:focus + .c-checkbox__label::before{
+//         box-shadow:0 0 0 2px rgba($checkbox-bg,.3);
+//     }
+
+//     &:checked + .c-checkbox__label::after{
+//       transform: translateY(-50%) scale(1);
+//     }
+//     &:disabled + .c-checkbox__label{
+//         opacity:.5;
+//     }
+//     &:disabled + .c-checkbox__label::before{
+//         background-color: #eee;
+//     }
+//     &:disabled + .c-checkbox__label::after{
+//         content:none;
+//     }
+//   }
+//   .c-checkbox__label{
+//     position: relative;
+//     margin-bottom: 0;
+//     vertical-align: middle;
+
+//     &::before{
+//       content: "";
+//       position: absolute;
+//       top: 50%;
+//       left: -($checkbox-size + 6px);
+//       display: block;
+//       width: $checkbox-size;
+//       height: $checkbox-size;
+//       box-sizing: border-box;
+//       transform:translateY(-50%);
+//       pointer-events: none;
+//       background-color: #fff;
+//       border: 1px solid $checkbox-border-color;
+//       border-radius: $checkbox-border-radius;
+//       transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1), border-color 0.3s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+//     }
+//     &::after{
+//       content: "";
+//       position: absolute;
+//       top: 50%;
+//       left: -($checkbox-size + 6px);
+//       display: block;
+//       width: $checkbox-size;
+//       height: $checkbox-size;
+//       box-sizing: border-box;
+//       transform:translateY(-50%) scale(0);
+//       background-repeat: no-repeat;
+//       background-size: 50% 50%;
+//       background-position: center center;
+//       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e");
+//       transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1), transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+//     }
+//   }
+// }
+
+// for contact form 7
+.wpcf7-list-item{
+  margin-left: 0;
+}
+.wpcf7-list-item input[type="checkbox"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.wpcf7-checkbox .wpcf7-list-item {
   padding-left: $checkbox-size + 6px;
-  margin-right:10px;
-  margin-bottom: 8px;
   display: inline-block;
   font-size: rem(14);
-  &.c-checkbox__vertical{
-    display: block;
+  label{
+    display: inline-block;
+    padding-bottom: rem(13);
+    margin-right: rem(36);
   }
-  .c-checkbox__input{
-    
-    &:checked +  .c-checkbox__label::before{
+  input[type="checkbox"] {
+    &:checked + .wpcf7-list-item-label::before {
       color: #fff;
       border-color: $checkbox-bg;
       background-color: $checkbox-bg;
     }
-    &:focus + .c-checkbox__label::before{
-        box-shadow:0 0 0 2px rgba($checkbox-bg,.3);
+    &:focus + .wpcf7-list-item-label::before {
+      box-shadow: 0 0 0 2px rgba($checkbox-bg, 0.3);
     }
-    
-    &:checked + .c-checkbox__label::after{
+
+    &:checked + .wpcf7-list-item-label::after {
       transform: translateY(-50%) scale(1);
     }
-    &:disabled + .c-checkbox__label{
-        opacity:.5;
+    &:disabled + .wpcf7-list-item-label {
+      opacity: 0.5;
     }
-    &:disabled + .c-checkbox__label::before{
-        background-color: #eee;
+    &:disabled + .wpcf7-list-item-label::before {
+      background-color: #eee;
     }
-    &:disabled + .c-checkbox__label::after{
-        content:none;
+    &:disabled + .wpcf7-list-item-label::after {
+      content: none;
     }
   }
-  .c-checkbox__label{
+
+  .wpcf7-list-item-label {
     position: relative;
     margin-bottom: 0;
     vertical-align: middle;
 
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       top: 50%;
@@ -52,14 +138,16 @@ $checkbox-border-color:#ccc;
       width: $checkbox-size;
       height: $checkbox-size;
       box-sizing: border-box;
-      transform:translateY(-50%);
+      transform: translateY(-50%);
       pointer-events: none;
       background-color: #fff;
       border: 1px solid $checkbox-border-color;
       border-radius: $checkbox-border-radius;
-      transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1), border-color 0.3s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1),
+        border-color 0.3s cubic-bezier(0.19, 1, 0.22, 1),
+        box-shadow 0.3s cubic-bezier(0.19, 1, 0.22, 1);
     }
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       top: 50%;
@@ -68,12 +156,20 @@ $checkbox-border-color:#ccc;
       width: $checkbox-size;
       height: $checkbox-size;
       box-sizing: border-box;
-      transform:translateY(-50%) scale(0);
+      transform: translateY(-50%) scale(0);
       background-repeat: no-repeat;
       background-size: 50% 50%;
       background-position: center center;
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e");
-      transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1), transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1),
+        transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
+}
+
+.wpcf7-checkbox .wpcf7-list-item:nth-child(4) label{
+  margin-right: 0;
+}
+.wpcf7-checkbox .wpcf7-list-item:last-child label{
+  padding-bottom: 0;
 }

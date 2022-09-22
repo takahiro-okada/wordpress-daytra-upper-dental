@@ -5,7 +5,7 @@
     <div class="p-sidenav-info__image"><img src="<?php echo esc_url(get_template_directory_uri() . '/dist/img/widget/widget-profile.jpg'); ?>"></div>
     <div class="p-sidenav-info__name">みなみ歯科クリニック</div>
     <div class="p-sidenav-info__description">お子様からご高齢の方まで、快適な空間で治療が受けられる場を作り、地域医療に貢献しきたいと考えております。</div>
-    <a href="" class="p-sidenav-info__link c-link c-link--arrow">当院について</a>
+    <a href="<?php echo home_url(); ?>/about" class="p-sidenav-info__link c-link c-link--arrow">当院について</a>
   </div>
 
   <!-- sidenav new article -->

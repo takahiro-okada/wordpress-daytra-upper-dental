@@ -2,10 +2,10 @@
 <footer class="l-footer">
   <div class="l-footer__inner l-inner">
     <div class="l-footer__contents p-footer-contents">
-      <div class="p-footer-contents__info">
+      <div class="p-footer-contents__main">
         <div class="p-footer-contents__logo"><img src="<?php echo get_template_directory_uri(); ?>/dist/img/common/logo.svg"></div>
         <div class="p-footer-contents__address"><span class="p-footer-contents__zip">〒166-0001</span>東京都杉並区阿佐谷北7-3-1</div>
-        <div class="p-working-info">
+        <div class="p-working-info p-footer-contents__info">
           <div class="p-working-info__tel"><img src="<?php echo get_template_directory_uri(); ?>/dist/img/common/icon-tel.svg">03-1234-5678</div>
           <div class="p-working-info__time">(年中無休 AM9:00〜PM22:00)</div>
         </div>
@@ -14,7 +14,7 @@
           <div class="p-footer-button p-footer-button--contact">お問い合わせ</div>
         </div>
         <div class="p-footer-contents__calendar">
-          <img src="<?php echo get_template_directory_uri(); ?>/dist/img/common/calendar.svg">
+          <img src="<?php echo get_template_directory_uri(); ?>/dist/img/common/calendar.png">
         </div>
       </div>
       <div class="p-footer-contents__map">

@@ -62,7 +62,7 @@
 
       </div>
       <div class="p-top__info">
-        <img src="<?php echo get_template_directory_uri(); ?>/dist/img/common/calendar.svg">
+        <img src="<?php echo get_template_directory_uri(); ?>/dist/img/common/calendar.png">
       </div>
     </div>
   </section>
@@ -79,7 +79,7 @@
             お子様からご高齢の方まで、快適な空間で治療が受けられる場を作り、地域医療に貢献しきたいと考えております。
           </p>
           <div class="p-featured-body__button">
-            <a href="<?php echo home_url(); ?>/about" class="c-button">当院について</a>
+            <a href="<?php echo home_url(); ?>/about" class="c-button c-button--white c-button--arrow">当院について</a>
           </div>
         </div>
         <div class="p-featured__image">
@@ -92,7 +92,7 @@
   <section class="l-recommend p-recommend">
     <div class="l-inner">
       <div class="p-recommend__title">
-        <h2 class="c-section-title">当院の３つのおすすめ</h2>
+        <h2 class="c-section-title">当院の3つのおすすめ</h2>
       </div>
       <ul class="p-recommend__list">
         <li class="p-recommend__item p-recommend-item">
@@ -203,5 +203,8 @@
     </div>
   </section>
 </main>
+
+<?php get_template_part('./template-parts/cta-side') ?>
+<?php get_template_part('./template-parts/cta-bottom') ?>
 
 <?php get_footer(); ?>

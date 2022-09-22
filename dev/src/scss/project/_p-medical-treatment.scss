@@ -1,74 +1,118 @@
-@use '../global/' as *;
+@use "../global/" as *;
 
-.p-medical-treatment{
+.p-medical-treatment {
   position: relative;
 }
-.p-medical-treatment__inner{
+.p-medical-treatment__inner {
   background-color: $sub-color02;
-}
-.p-medical-treatment__content{
-  margin-top: rem(40);
+  position: relative;
   @include mq('md'){
-    margin-top: rem(60);
+    padding-bottom: rem(80);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/index/deco-onestar.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: rem(30);
+    height: rem(30);
+    bottom: rem(10);
+    left: rem(12);
+    @include mq('md'){
+      width: rem(57);
+      height: rem(57);
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/index/deco-twostar.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: rem(60);
+    height: rem(60);
+    bottom: 0;
+    right: rem(4);
+    @include mq("md") {
+      width: rem(125);
+      height: rem(130);
+    }
   }
 }
-.p-medical-treatment-content{
+.p-medical-treatment__contents {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(64);
+  }
+}
+.p-medical-treatment__body{
+  &:not(:first-child){
+    margin-top: rem(40);
+  }
+}
+.p-medical-treatment-content {
   background-color: #fff;
   border-radius: 20px;
   padding: rem(24) rem(20) rem(20) rem(20);
   position: relative;
-  @include mq('md'){
-    padding: rem(55) rem(60) rem(60) rem(60);
+  @include mq("md") {
+    padding: rem(48) rem(60) rem(60) rem(60);
   }
 }
-.p-medical-treatment-content__tag{
+.p-medical-treatment-content__tag {
   position: absolute;
   right: 0;
-  top:0;
+  top: 0;
 }
-.p-medical-treatment-content__body{
+.p-medical-treatment-content__body {
   margin-top: rem(40);
-  @include mq('md'){
+  @include mq("md") {
     display: flex;
+    margin-top: rem(35);
   }
 }
 
-.p-medical-treatment-content__heading{
-  border-bottom: 1px solid #C2C2C2;
+.p-medical-treatment-content__heading {
+  border-bottom: 1px solid #c2c2c2;
   padding-bottom: rem(20);
-  @include mq('md'){
+  @include mq("md") {
     display: flex;
     align-items: center;
-    padding-bottom: rem(40);
+    padding-bottom: rem(30);
   }
 }
-.p-medical-treatment-content__title{
+.p-medical-treatment-content__title {
   font-size: rem(20);
-  @include mq('md'){
-  font-size: rem(28);
+  letter-spacing: 0.08em;
+  @include mq("md") {
+    font-size: rem(28);
   }
 }
-.p-medical-treatment-content__subtitle{
+.p-medical-treatment-content__subtitle {
   font-size: rem(14);
   color: $primary-color;
-  @include mq('md'){
-    margin-left: 20px;
+  letter-spacing: 0.08em;
+  @include mq("md") {
+    margin-left: rem(40);
   }
 }
-.p-medical-treatment-content__text{
+.p-medical-treatment-content__text {
   font-size: rem(14);
-  flex-grow: 1;
+  line-height: calc(24 / 14);
+  @include mq("md") {
+    width: 47%;
+  }
 }
-.p-medical-treatment-content__image{
+.p-medical-treatment-content__image {
   margin-top: rem(20);
   position: relative;
-  @include mq('md'){
+  @include mq("md") {
     margin-top: 0;
-    width: 30%;
-    flex-shrink: 0;
-    margin-left: rem(20);
+    width: calc(53% - rem(40));
+    margin-left: rem(40);
   }
-  img{
+  img {
     border-radius: 20px;
   }
 }
