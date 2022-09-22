@@ -3,8 +3,12 @@
 .l-footer{
   background-color: $sub-color02;
   padding-top: rem(30);
+  @include mq('md'){
+    padding-top: rem(50);
+  }
 }
 .l-footer__inner{
+  max-width: rem(1040);
 }
 .l-footer__contents{
   background-color: #fff;
@@ -13,6 +17,7 @@
   @include mq('md'){
     display: flex;
     padding:rem(40) rem(47);
+    border-radius: rem(20);
   }
 }
 .l-footer-deco-top{
@@ -29,6 +34,7 @@
     position: absolute;
   }
   @include mq('md'){
+    margin-top: rem(160);
     height: 3vw;
     &:before{
       background: url(../img/index/deco-wave-pc.png) no-repeat top center / cover ;
@@ -37,4 +43,7 @@
 }
 .l-footer__nav{
   margin-top: rem(60);
+  @include mq('md'){
+    margin-top: rem(4);
+  }
 }

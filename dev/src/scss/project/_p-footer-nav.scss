@@ -1,7 +1,7 @@
-@use '../global/' as *;
+@use "../global/" as *;
 
 .p-footer-nav {
-  @include mq('lg'){
+  @include mq("lg") {
     display: flex;
     justify-content: center;
   }
@@ -11,7 +11,7 @@
   &:not(:first-child) {
     margin-top: rem(40);
   }
-  @include mq('lg'){
+  @include mq("lg") {
     &:not(:first-child) {
       margin-top: rem(0);
       margin-left: rem(40);
@@ -24,21 +24,20 @@
   font-weight: bold;
   line-height: 1.6;
 }
-
-.p-footer-nav__list {
-  margin-top: rem(10);
+.p-footer-nav__list{
+  &:nth-child(n+2){
+    margin-left: rem(20);
+  }
 }
-
 .p-footer-nav__item {
+  margin-top: rem(20);
 }
-
 .p-footer-nav__link {
   display: inline-block;
-  padding: rem(10) rem(10) rem(10) rem(15);
-  line-height: 1;
+  padding: 0 0 0 rem(15);
   font-size: rem(16);
   position: relative;
-  @include mq('lg'){
+  @include mq("lg") {
     font-size: rem(16);
   }
   &::before {

@@ -6,3 +6,8 @@
 .c-date__input:not(:first-child){
   margin-top: rem(20);
 }
+
+.c-date .wpcf7-form-control-wrap:not(:first-child){
+  margin-top: rem(20);
+  display: block;
+}

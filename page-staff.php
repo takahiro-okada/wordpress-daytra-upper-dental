@@ -9,11 +9,11 @@ $sub_title = "STAFF";
 get_template_part('./template-parts/sub-mv', null, $sub_title)
 ?>
 
-<div class="l-inner l-breadcrums">
+<div class="l-breadcrums">
   <?php get_template_part('./template-parts/breadcrums') ?>
 </div>
 
-<section class="l-greeting p-greeting">
+<section class="l-sub-staff__greeting p-greeting">
   <div class="l-inner">
     <div class="p-greeting__title">
       <h2 class="c-section-title">院長のあいさつ</h2>

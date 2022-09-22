@@ -9,7 +9,7 @@ $sub_title = "MEDICAL";
 get_template_part('./template-parts/sub-mv', null, $sub_title)
 ?>
 
-<div class="l-inner l-breadcrums">
+<div class="l-breadcrums">
   <?php get_template_part('./template-parts/breadcrums') ?>
 </div>
 
@@ -75,7 +75,7 @@ wp_reset_postdata();
 ?>
 <!-- End Logic -->
 
-<section class="p-medical-toc">
+<section class="l-sub-medical__toc p-medical-toc">
   <div class="p-medical-toc__inner l-inner">
     <div class="p-medical-toc__contents p-medical-toc-contents">
       <div class="p-medical-toc-contents__heading">
@@ -103,58 +103,66 @@ wp_reset_postdata();
 </section>
 
 <!-- 一般診療 -->
-<section class="p-medical-treatment l-medical-treatment">
+<section class="l-medical-treatment__normal p-medical-treatment">
   <div class="l-plan--deco-top"></div>
   <div class="p-medical-treatment__inner">
     <div class="l-inner">
       <h2 class="p-medical-treatment__title c-section-title">一般診療</h2>
-      <?php foreach ($general_posts as $general_post) : setup_postdata($general_post) ?>
-        <div id="general_anchor<?php echo $general_post['id'] ?>" class="p-medical-treatment__content p-medical-treatment-content">
-          <div class="p-medical-treatment-content__tag medical-tag medical-tag--general">保険対象</div>
-          <div class="p-medical-treatment-content__heading">
-            <h3 class="p-medical-treatment-content__title"><?php echo $general_post['title'] ?></h3>
-            <span class="p-medical-treatment-content__subtitle"><?php echo $general_post['meta_lead'] ?></span>
-          </div>
-          <div class="p-medical-treatment-content__body">
-            <p class="p-medical-treatment-content__text">
-              <?php echo $general_post['meta_text'] ?>
-            </p>
-            <div class="p-medical-treatment-content__image">
-              <?php echo $general_post['image'] ?>
+      <div class="p-medical-treatment__contents">
+        <?php foreach ($general_posts as $general_post) : setup_postdata($general_post) ?>
+          <div id="general_anchor<?php echo $general_post['id'] ?>" class="p-medical-treatment__body p-medical-treatment-content">
+            <div class="p-medical-treatment-content__tag medical-tag medical-tag--general">保険対象</div>
+            <div class="p-medical-treatment-content__heading">
+              <h3 class="p-medical-treatment-content__title"><?php echo $general_post['title'] ?></h3>
+              <span class="p-medical-treatment-content__subtitle"><?php echo $general_post['meta_lead'] ?></span>
+            </div>
+            <div class="p-medical-treatment-content__body">
+              <p class="p-medical-treatment-content__text">
+                <?php echo $general_post['meta_text'] ?>
+              </p>
+              <div class="p-medical-treatment-content__image">
+                <div class="c-thumbnail--75">
+                  <?php echo $general_post['image'] ?>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      <?php endforeach; ?>
-      <?php wp_reset_postdata(); ?>
+        <?php endforeach; ?>
+        <?php wp_reset_postdata(); ?>
+      </div>
     </div>
   </div>
   <div class="l-plan--deco-bottom"></div>
 </section>
 
 <!-- 特殊診療 -->
-<section class="p-medical-treatment">
+<section class="l-medical-treatment__special p-medical-treatment">
   <div class="l-plan--deco-top"></div>
   <div class="p-medical-treatment__inner">
     <div class="l-inner">
       <h2 class="p-medical-treatment__title c-section-title">特殊診療</h2>
-      <?php foreach ($special_posts as $special_post) : setup_postdata($special_post) ?>
-        <div id="special_anchor<?php echo $special_post['id'] ?>" class="p-medical-treatment__content p-medical-treatment-content">
-          <div class="p-medical-treatment-content__tag medical-tag medical-tag--special">保険対象</div>
-          <div class="p-medical-treatment-content__heading">
-            <h3 class="p-medical-treatment-content__title"><?php echo $special_post['title'] ?></h3>
-            <span class="p-medical-treatment-content__subtitle"><?php echo $special_post['meta_lead'] ?></span>
-          </div>
-          <div class="p-medical-treatment-content__body">
-            <p class="p-medical-treatment-content__text">
-              <?php echo $special_post['meta_text'] ?>
-            </p>
-            <div class="p-medical-treatment-content__image">
-              <?php echo $special_post['image'] ?>
+      <div class="p-medical-treatment__contents">
+        <?php foreach ($special_posts as $special_post) : setup_postdata($special_post) ?>
+          <div id="special_anchor<?php echo $special_post['id'] ?>" class="p-medical-treatment__body p-medical-treatment-content">
+            <div class="p-medical-treatment-content__tag medical-tag medical-tag--special">実費</div>
+            <div class="p-medical-treatment-content__heading">
+              <h3 class="p-medical-treatment-content__title"><?php echo $special_post['title'] ?></h3>
+              <span class="p-medical-treatment-content__subtitle"><?php echo $special_post['meta_lead'] ?></span>
+            </div>
+            <div class="p-medical-treatment-content__body">
+              <p class="p-medical-treatment-content__text">
+                <?php echo $special_post['meta_text'] ?>
+              </p>
+              <div class="p-medical-treatment-content__image">
+                <div class="c-thumbnail--75">
+                  <?php echo $special_post['image'] ?>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      <?php endforeach; ?>
-      <?php wp_reset_postdata(); ?>
+        <?php endforeach; ?>
+        <?php wp_reset_postdata(); ?>
+      </div>
     </div>
   </div>
   <div class="l-plan--deco-bottom"></div>

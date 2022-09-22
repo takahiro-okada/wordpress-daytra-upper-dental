@@ -1,6 +1,12 @@
 @use '../global/' as *;
 
-.l-medical-treatment{
+.l-medical-treatment__normal{
+  margin-top: rem(100);
+  @include mq('md'){
+    margin-top: rem(160);
+  }
+}
+.l-medical-treatment__special{
   margin-top: rem(100);
   @include mq('md'){
     margin-top: rem(160);

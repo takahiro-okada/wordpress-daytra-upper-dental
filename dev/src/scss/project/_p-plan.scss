@@ -1,19 +1,24 @@
-@use '../global/' as *;
+@use "../global/" as *;
 
-.p-plan{
+.p-plan {
   margin-top: rem(100);
   position: relative;
-  @include mq('md'){
+  @include mq("md") {
     margin-top: rem(140);
   }
 }
-.p-plan__bg{
+.p-plan__inner {
+  @include mq("md") {
+    max-width: rem(1040);
+  }
+}
+.p-plan__bg {
   background-color: $sub-color02;
   padding-top: rem(23);
   padding-bottom: rem(95);
   position: relative;
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     background-image: url(../img/index/deco-onestar.svg);
     background-repeat: no-repeat;
@@ -22,9 +27,13 @@
     height: rem(30);
     bottom: rem(10);
     left: rem(12);
+    @include mq('md'){
+      width: rem(57);
+      height: rem(57);
+    }
   }
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     background-image: url(../img/index/deco-twostar.svg);
     background-repeat: no-repeat;
@@ -33,39 +42,46 @@
     height: rem(60);
     bottom: 0;
     right: rem(4);
+    @include mq("md") {
+      width: rem(125);
+      height: rem(130);
+    }
+  }
+  @include mq("md") {
+    padding-top: 0;
+    padding-bottom: rem(65);
   }
 }
 
-.p-plan__list{
+.p-plan__list {
   margin-top: rem(40);
-  @include mq('md'){
-    display: flex;
-    flex-wrap: wrap;
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: rem(60);
+    margin-right: auto;
+    margin-left: auto;
   }
 }
-.p-plan__item{
-  @include mq('md'){
-    margin-left: rem(80);
-    width: calc((100% - 80px) / 2);
-    &:nth-child(2n+1){
-      margin-left: 0;
-    }
-  }
+.p-plan__item {
 }
-.p-plan__item:not(:first-child){
+.p-plan__item:not(:first-child) {
   margin-top: rem(20);
-  @include mq('md'){
+  @include mq("md") {
     margin-top: 0;
   }
 }
 
-.p-plan__content{
+.p-plan__content {
   font-size: rem(14);
   margin-top: rem(20);
   padding: rem(20);
   background-color: #fff;
-  line-height: calc(24/14);
-  @include mq('md'){
+  line-height: calc(24 / 14);
+  @include mq("md") {
     margin-top: rem(60);
+    padding: rem(40);
+    line-height: calc(28 / 14);
   }
 }

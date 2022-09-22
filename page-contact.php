@@ -9,7 +9,7 @@ $sub_title = "CONTACT";
 get_template_part('./template-parts/sub-mv', null, $sub_title)
 ?>
 
-<div class="l-inner l-breadcrums">
+<div class="l-breadcrums">
   <?php get_template_part('./template-parts/breadcrums') ?>
 </div>
 

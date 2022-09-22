@@ -11,6 +11,9 @@
   @include mq("md") {
     margin-top: rem(60);
     grid-template-columns: 1fr 1fr 1fr;
+    gap: rem(24) rem(24);
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 .p-about-situation__item {

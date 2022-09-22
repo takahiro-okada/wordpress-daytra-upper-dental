@@ -1,11 +1,7 @@
 @use '../global/' as *;
-
-.p-medical-toc{
-  margin-top: rem(60);
-}
 .p-medical-toc__contents{
   &:not(:first-child){
-    margin-top: rem(80);
+    margin-top: rem(70);
   }
 }
 .p-medical-toc-contents__heading{
@@ -15,13 +11,17 @@
 .p-medical-toc-contents__title{
   font-size: rem(20);
   font-weight: bold;
+  letter-spacing: .08em;
+  @include mq('md'){
+    font-size: rem(28);
+  }
 }
 .p-medical-toc-contents__tag{
   margin-left: rem(24);
   background-color: $primary-color;
   color: #fff;
   display: inline-block;
-  padding: rem(8) rem(12);
+  padding: rem(3) rem(12);
   border-radius: 20px;
   font-size: rem(14);
   letter-spacing: .08em;
@@ -33,7 +33,7 @@
   background-color: $accent-color;
 }
 .p-medical-toc__list{
-  margin-top: rem(32);
+  margin-top: rem(28);
   @include mq('md'){
     display: flex;
     flex-wrap: wrap;
@@ -56,11 +56,12 @@
   color: $primary-color;
   font-weight: bold;
   display: inline-block;
-  padding:rem(17) 0;
+  padding:rem(13) 0;
   width: 100%;
-  border-radius: 20px;
+  border-radius:10px;
+  letter-spacing: .3em;
   text-align: center;
   @include mq('md'){
-    padding:rem(17) rem(32);
+    padding:rem(13) rem(30);
   }
 }

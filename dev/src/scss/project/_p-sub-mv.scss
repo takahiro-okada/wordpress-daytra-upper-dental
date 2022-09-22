@@ -1,10 +1,10 @@
 @use "../global/" as *;
 
 .p-sub-mv {
-  margin: rem(20) rem(20) 0;
+  margin: rem(40) rem(60) 0;
   display: block;
   position: relative;
-  height: rem(360);
+  height: rem(340);
   background-position: center;
   background-size: cover;
   border-radius: rem(12);
@@ -30,9 +30,17 @@
   font-size: rem(24);
   color:#fff;
   letter-spacing: .2em;
+  font-weight: bold;
+  @include mq('md'){
+    font-size: rem(32);
+  }
 }
 .p-sub-mv__subtitle{
   font-size: rem(12);
+  margin-top: rem(10);
   letter-spacing: .1em;
   color: #fff;
+  @include mq('md'){
+    font-size: rem(14);
+  }
 }

@@ -22,6 +22,12 @@
       color:$primary-color;
     }
   }
+  &.is-active{
+    color: $primary-color;
+    svg{
+      fill: $primary-color;
+    }
+  }
 }
 .l-header-contents__text{
   margin-top: rem(6);

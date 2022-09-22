@@ -5,6 +5,13 @@
   padding-top: rem(110);
   @include mq('md'){
     padding-bottom: rem(128);
-    padding-top: rem(210);
+    padding-top: rem(180);
+  }
+}
+.l-featured--second{
+  padding-top: rem(110);
+  @include mq('md'){
+    margin-top: 0;
+    padding-top: rem(135);
   }
 }

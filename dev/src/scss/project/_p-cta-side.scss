@@ -1,0 +1,22 @@
+@use '../global/' as *;
+
+.p-cta-side{
+  background-color: $primary-color;
+  border-radius: 20px 0 0 20px;
+  padding: 21px 17px;
+  transition: all .3s;
+  &:hover{
+    background-color: #0060A0;
+  }
+}
+.p-cta-side__image{
+  width: rem(40);
+  margin-right: auto;;
+  margin-left: auto;
+}
+.p-cta-side__text{
+  color: #fff;
+  font-size: rem(14);
+  margin-top: rem(12);
+  line-height: calc(18 /14);
+}

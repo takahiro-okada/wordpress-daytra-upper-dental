@@ -38,7 +38,7 @@ add_action('wp_enqueue_scripts', 'add_script');
 // Custom Post
 function custom_page()
 {
-  // 診療案内
+  // Medical
   register_post_type(
     'plan',
     array(
@@ -73,7 +73,7 @@ function custom_page()
     )
   );
 
-  // スタッフ
+  // Staff
   register_post_type(
     'staff',
     array(
@@ -108,7 +108,7 @@ function custom_page()
     )
   );
 
-  // スタッフブログ
+  // Staff Blog
   register_post_type(
     'blog',
     array(
@@ -158,23 +158,25 @@ function is_new($days = 3)
   return false;
 }
 
-// global $wp_rewrite;
-// $wp_rewrite->flush_rules();
-
-function redirect_to_thanks_page()
+// Redirect Thanks Page
+add_action('wp_footer', 'add_origin_thanks_page');
+function add_origin_thanks_page()
 {
   $homeUrl = home_url();
-  echo <<< EOD
-  <script>
-  document.addEventListener( 'wpcf7mailsent', function( event ) {
-    location = '{$homeUrl}/thanks/';
-  }, false );
-  </script>
-  EOD;
+  echo <<< EOC
+      <script>
+        var thanksPage = {
+          228: '{$homeUrl}/reservation/thanks',
+          227: '{$homeUrl}/contact/thanks',
+        };
+       document.addEventListener( 'wpcf7mailsent', function( event ) {
+         location = thanksPage[event.detail.contactFormId];
+       }, false );
+      </script>
+    EOC;
 }
-add_action('wp_footer', 'redirect_to_thanks_page');
 
-// Contact Form 7の自動pタグ無効
+// Contact Form 7 Invalid autoinsert "P" tag.
 add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false()
 {

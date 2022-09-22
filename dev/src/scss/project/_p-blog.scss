@@ -3,28 +3,31 @@
 .p-blog{
 
 }
+.p-blog__inner{
+  max-width: rem(1040);
+}
 .p-blog__title{
 
 }
 .p-blog__cards{
   margin-top: rem(43);
   @include mq('md'){
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: rem(80);
+    display: grid;
+    gap:rem(50);
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .p-blog__card{
   @include mq('md'){
-    width: calc((100% - 100px) / 3);
-    margin-left: rem(50);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
     border-radius: rem(20);
-    &:nth-child(3n+1){
-      margin-left: 0;
-    }
   }
 }
 .p-blog__button{
   margin-top: rem(37);
   text-align: center;
+  @include mq('md'){
+    margin-top:rem(67);
+  }
 }

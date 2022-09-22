@@ -15,16 +15,15 @@
 .p-top__info{
   margin-top: rem(-34);
   flex-grow: 1;
-  img{
-    width: 100%;
-  }
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   @include mq('md'){
-    margin-top: rem(-54);
-    margin-left: rem(63);
+    margin-top: rem(-40);
+    margin-left: rem(52);
     max-width: 100%;
   }
 }
 .p-top__news{
-  margin-top: rem(32);
+  margin-top: rem(12);
   flex-grow: 1;
+  flex-shrink: 0;
 }

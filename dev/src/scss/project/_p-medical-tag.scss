@@ -4,9 +4,9 @@
   display: inline-block;
   position: absolute;
   top: 0;
-  right: 60px;
+  right: rem(60);
   margin: 0;
-  padding: 10px 0;
+  padding: rem(18) 0 rem(11);
   z-index: 2;
   width: 80px;
   text-align: center;
@@ -21,6 +21,9 @@
     width: 0;
     border-bottom: 10px solid transparent;
   }
+  @include mq('md'){
+    width: rem(100);
+  }
 }
 .medical-tag--general{
   background: $primary-color;
@@ -29,13 +32,20 @@
     border-right: 40px solid $primary-color;
     border-bottom: 10px solid transparent;
   }
+  @include mq('md'){
+    &:before{
+      border-left: 50px solid $primary-color;
+      border-right: 50px solid $primary-color;
+      border-bottom: 18px solid transparent;
+    }
+  }
 }
 .medical-tag--special{
   background: $accent-color;
   &:before{
-    border-left: 40px solid $accent-color;
-    border-right: 40px solid $accent-color;
-    border-bottom: 10px solid transparent;
+    border-left: 50px solid $accent-color;
+    border-right: 50px solid $accent-color;
+    border-bottom: 18px solid transparent;
   }
 }
 

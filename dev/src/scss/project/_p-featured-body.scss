@@ -1,42 +1,42 @@
-@use '../global/' as *;
+@use "../global/" as *;
 
-.p-featured-body{
-
+.p-featured-body {
 }
-.p-featured-body__title{
+.p-featured-body__title {
   font-size: rem(20);
   font-weight: bold;
   margin-top: rem(10);
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
   line-height: calc(32 / 20);
-  @include mq('md'){
+  @include mq("md") {
+    line-height: calc(44 / 28);
     font-size: rem(28);
-    margin-top: rem(30);
+    margin-top: rem(22);
   }
 }
-.p-featured-body__sub-title{
+.p-featured-body__sub-title {
   font-size: rem(11);
-  color:$primary-color;
-  letter-spacing: .08em;
+  color: $primary-color;
+  letter-spacing: 0.08em;
   line-height: calc(32 / 20);
-  @include mq('md'){
+  @include mq("md") {
     font-size: rem(14);
     margin-top: rem(32);
   }
 }
-.p-featured-body__desc{
+.p-featured-body__desc {
   font-size: rem(14);
   margin-top: rem(30);
-  line-height: calc( 24 / 14 );
-  @include mq('lg'){
-
+  line-height: calc(24 / 14);
+  @include mq("lg") {
+    margin-top: rem(40);
   }
 }
-.p-featured-body__button{
+.p-featured-body__button {
   margin-top: rem(33);
   text-align: center;
-  @include mq('md'){
-    margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(38);
     text-align: left;
   }
 }

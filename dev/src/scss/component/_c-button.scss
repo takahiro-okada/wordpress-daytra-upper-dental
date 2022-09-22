@@ -6,7 +6,7 @@
   border-radius: rem(120);
   color: $primary-color;
   font-size: rem(14);
-  padding:rem(5) rem(40);
+  padding:rem(5) rem(46);
   position: relative;
   transition:background-color .3s, border .3s, color .3s;
   &:hover{
@@ -17,6 +17,12 @@
       background: url(../img/common/white-arrow.svg) no-repeat;
       right: rem(5);
     }
+  }
+}
+.c-button--white{
+  background-color: #fff;
+  &:hover{
+    background: $primary-color;
   }
 }
 .c-button--arrow{
