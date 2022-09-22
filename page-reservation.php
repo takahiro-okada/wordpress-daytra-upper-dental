@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 
 <?php
-$sub_title = "RESERVATION";
+$sub_title = "RESERVE";
 get_template_part('./template-parts/sub-mv', null, $sub_title)
 ?>
 
@@ -14,11 +14,11 @@ get_template_part('./template-parts/sub-mv', null, $sub_title)
 </div>
 
 <section class="l-reservation p-reservation">
-  <div class="l-inner">
+  <div class="l-inner p-reservation__inner">
     <div class="p-reservation__heading p-reservation-heading">
-      <div class="p-reservation-heading__body">
+      <div class="p-reservation-heading__tel">
         <h3 class="p-reservation-heading__title">お電話でのご予約/ご相談</h3>
-        <div class="p-working-infop-footer-contents__working-time">
+        <div class="p-reservation-heading__info">
           <div class="p-working-info__tel"><img src="<?php echo get_template_directory_uri(); ?>/dist/img/common/icon-tel.svg">03-1234-5678</div>
           <div class="p-working-info__time">(年中無休 AM9:00〜PM22:00)</div>
         </div>
@@ -28,9 +28,9 @@ get_template_part('./template-parts/sub-mv', null, $sub_title)
           あらかじめご了承ください。
         </p>
       </div>
-      <div class="p-reservation-heading__body">
+      <div class="p-reservation-heading__email">
         <h3 class="p-reservation-heading__title">メールでのご予約/ご相談</h3>
-        <p class="p-reservation-heading__text">
+        <p class="p-reservation-heading__text u-mt-20">
           【ご予約に関しての注意点】<br>
           メールアドレスの入力間違いにより送信できない事が発生しておりますので、メールアドレスは正しくご入力下さい。<br>
           ※24時間以内に当院からの返信がない場合には、お電話(TEL 03-1234-5678)にてお問い合わせ下さい。

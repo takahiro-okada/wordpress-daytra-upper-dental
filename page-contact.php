@@ -29,7 +29,7 @@ get_template_part('./template-parts/sub-mv', null, $sub_title)
 <div class="p-contact-contents l-contact-contents">
   <div class="p-contact-contents__inner l-inner">
     <div class="p-contact-contents__title">
-      <div class="c-section-title">予約フォーム</div>
+      <div class="c-section-title">お問い合わせフォーム</div>
     </div>
 
     <div class="p-contact-contents__form c-form">

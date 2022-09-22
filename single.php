@@ -1,10 +1,11 @@
 <?php get_header(); ?>
 
-<?php
-$sub_title = "RESERVATION";
-get_template_part('./template-parts/sub-mv', null, $sub_title)
-?>
-
+<div class="p-sub-mv" style="background-image:url('<?php echo get_template_directory_uri(); ?>/dist/img/archive/archive_top.jpeg)">
+  <div class="p-sub-mv__contents">
+    <h2 class="p-sub-mv__title">スタッフブログ</h2>
+    <p class="p-sub-mv__subtitle">STAFF BLOG</p>
+  </div>
+</div>
 <div class="l-breadcrums">
   <?php get_template_part('./template-parts/breadcrums') ?>
 </div>
@@ -38,6 +39,10 @@ get_template_part('./template-parts/sub-mv', null, $sub_title)
                   ?>
                 </div>
               </div>
+              <div class="l-entry-pager">
+                <?php get_template_part('./template-parts/entry-pager') ?>
+              </div>
+              
           <?php endwhile;
           endif; ?>
         </div>

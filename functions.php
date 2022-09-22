@@ -91,20 +91,20 @@ function custom_page()
         'add_new' => '新規ページ追加',
         'exclude_from_search' => false,
       ),
-      )
-    );
-    
-    register_taxonomy(
-      'staff-category', //タクソノミーのスラッグ
-      'staff', //追加するカスタム投稿のスラッグ
-      array(
-        'hierarchical' => true,
-        'update_count_callback' => '_update_post_term_count',
-        'label' => 'カテゴリー',
-        'singular_label' => 'カテゴリー',
-        'public' => true,
-        'show_ui' => true,
-        'show_in_rest' => true,
+    )
+  );
+
+  register_taxonomy(
+    'staff-category', //タクソノミーのスラッグ
+    'staff', //追加するカスタム投稿のスラッグ
+    array(
+      'hierarchical' => true,
+      'update_count_callback' => '_update_post_term_count',
+      'label' => 'カテゴリー',
+      'singular_label' => 'カテゴリー',
+      'public' => true,
+      'show_ui' => true,
+      'show_in_rest' => true,
     )
   );
 
@@ -182,3 +182,26 @@ function wpcf7_autop_return_false()
 {
   return false;
 }
+
+add_filter('get_the_archive_title', function ($title) {
+  if (is_category()) {
+    $title = single_cat_title('', false);
+  } elseif (is_tag()) {
+    $title = single_tag_title('', false);
+  } elseif (is_tax()) {
+    $title = single_term_title('', false);
+  } elseif (is_post_type_archive()) {
+    $title = post_type_archive_title('', false);
+  } elseif (is_date()) {
+    $title = get_the_time('Y年n月');
+  } elseif (is_search()) {
+    $title = '検索結果：' . esc_html(get_search_query(false));
+  } elseif (is_404()) {
+    $title = '「404」ページが見つかりません';
+  } else {
+  }
+  return $title;
+});
+
+	
+add_filter( 'wpcf7_validate_configuration', '__return_false' );

@@ -50,7 +50,7 @@
             <li class="p-footer-nav__item"><a href="" class="p-footer-nav__link">予防歯科</a></li>
             <li class="p-footer-nav__item"><a href="" class="p-footer-nav__link">入れ歯</a></li>
           </ul>
-          <ul class="p-footer-nav__list">
+          <ul class="p-footer-nav__list p-footer-nav__list-second">
             <li class="p-footer-nav__item"><a href="" class="p-footer-nav__link">矯正歯科</a></li>
             <li class="p-footer-nav__item"><a href="" class="p-footer-nav__link">ホワイトニング</a></li>
             <li class="p-footer-nav__item"><a href="" class="p-footer-nav__link">口腔外科</a></li>
