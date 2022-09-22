@@ -3068,7 +3068,7 @@ jQuery(function() {
     autoplaySpeed: 0,
     speed: 5000,
     cssEase: "linear",
-    slidesToShow: 4,
+    slidesToShow: 3.6,
     swipe: false,
     arrows: false,
     pauseOnFocus: false,

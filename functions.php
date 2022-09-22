@@ -91,20 +91,20 @@ function custom_page()
         'add_new' => '新規ページ追加',
         'exclude_from_search' => false,
       ),
-    )
-  );
-
-  register_taxonomy(
-    'staff-category',
-    'staff',
-    array(
-      'hierarchical' => true,
-      'update_count_callback' => '_update_post_term_count',
-      'label' => 'カテゴリー',
-      'singular_label' => 'カテゴリー',
-      'public' => true,
-      'show_ui' => true,
-      'show_in_rest' => true
+      )
+    );
+    
+    register_taxonomy(
+      'staff-category', //タクソノミーのスラッグ
+      'staff', //追加するカスタム投稿のスラッグ
+      array(
+        'hierarchical' => true,
+        'update_count_callback' => '_update_post_term_count',
+        'label' => 'カテゴリー',
+        'singular_label' => 'カテゴリー',
+        'public' => true,
+        'show_ui' => true,
+        'show_in_rest' => true,
     )
   );
 

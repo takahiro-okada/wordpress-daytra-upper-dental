@@ -1609,7 +1609,7 @@ a {
 }
 
 .l-sub-staff__greeting {
-	margin-top: 10rem;
+	margin-top: 8rem;
 }
 
 .l-sidenav {
@@ -2558,6 +2558,10 @@ a {
 	margin-top: 4rem;
 }
 
+.p-greeting__body {
+	width: 46%;
+}
+
 .p-greeting__image img {
 	-o-object-fit: cover;
 	border-radius: 20px;
@@ -2567,26 +2571,56 @@ a {
 .p-greeting-body__title {
 	font-size: 2rem;
 	letter-spacing: 0.08em;
+	line-height: 1.5714285714;
 }
 
 .p-greeting-body__text {
+	margin-top: 3.5rem;
+}
+
+.p-greeting-body__text p {
 	font-size: 1.4rem;
-	margin-top: 4rem;
+	line-height: 1.7142857143;
+}
+
+.p-greeting-body__text p:not(:first-child) {
+	margin-top: 2.3rem;
 }
 
 .p-greeting-body__name {
+	font-size: 1.4rem;
+	margin-top: 1.2rem;
 	text-align: right;
+}
+
+.p-greeting__infos {
+	margin-top: 4.7rem;
+}
+
+.p-greeting-info:not(:first-child) {
+	margin-top: 2rem;
 }
 
 .p-greeting-info__title {
 	border-bottom: 1px solid #333;
 	font-size: 1.6rem;
+	padding-bottom: 0.4rem;
+}
+
+.p-greeting-table {
+	margin-top: 1rem;
 }
 
 .p-greeting-table th,
 .p-greeting-table td {
 	font-size: 1.4rem;
 	font-weight: normal;
+	line-height: 2.1;
+}
+
+.p-greeting-table td {
+	display: inline-block;
+	margin-left: 1rem;
 }
 
 .p-staff-slider {
@@ -2610,6 +2644,8 @@ a {
 	border-bottom: 1px solid #707070;
 	font-size: 1.6rem;
 	font-weight: bold;
+	letter-spacing: 0.08em;
+	line-height: 2;
 	padding-bottom: 0.8rem;
 }
 
@@ -2621,7 +2657,7 @@ a {
 }
 
 .p-staff-card__heading {
-	margin-top: 1.6rem;
+	margin-top: 1.2rem;
 	text-align: center;
 }
 
@@ -2636,22 +2672,30 @@ a {
 .p-staff-card__info {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 1.6rem;
+	margin-top: 0.7rem;
 	width: 100%;
 }
 
 .p-staff-card__info-left {
 	background-color: #DFF1FD;
 	font-size: 1.4rem;
-	padding: 1.7rem 2rem;
+	padding: 1.4rem 2rem;
 	width: 50%;
+}
+
+.p-staff-card__info-left:not(:first-child) {
+	border-top: 1px solid #fff;
 }
 
 .p-staff-card__info-right {
 	background-color: #fff;
 	font-size: 1.4rem;
-	padding: 1.7rem 2rem;
+	padding: 1.4rem 2rem;
 	width: 50%;
+}
+
+.p-staff-card__info-right:not(:first-child) {
+	border-top: 1px solid #fff;
 }
 
 .p-staff-card__image {
@@ -3585,28 +3629,30 @@ html {
 
 .p-greeting__contents {
 	display: flex;
-	margin-top: 6rem;
-}
-
-.p-greeting__body {
-	margin-right: 4rem;
+	margin-top: 5.5rem;
 }
 
 .p-greeting__image {
-	margin-left: 4rem;
+	margin-left: 8rem;
+	width: calc(54% - 8rem);
 }
 
 .p-greeting-body__title {
 	font-size: 2.8rem;
 }
 
+.p-staff-slider {
+	margin-top: 16rem;
+}
+
 .p-staff-members__content {
-	margin-top: 6rem;
+	margin-top: 5.5rem;
 }
 
 .p-staff-members__items {
-	gap: 8rem;
+	gap: 5rem 8rem;
 	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 3.5rem;
 }
 
 .p-archive {
