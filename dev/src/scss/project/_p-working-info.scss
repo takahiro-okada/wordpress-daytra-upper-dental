@@ -2,7 +2,7 @@
 
 .p-working-info__tel{
   line-height: calc(36 / 24);
-  font-size: rem(20);
+  font-size: rem(32);
   font-weight: bold;
   color: $primary-color;
   align-items: baseline;
@@ -11,12 +11,9 @@
     color: $primary-color;
   }
   img{
-    width: rem(30);
+    width: rem(28);
     margin-right: rem(5);
     vertical-align: middle;
-  }
-  @include mq('md'){
-    font-size: rem(32);
   }
 }
 

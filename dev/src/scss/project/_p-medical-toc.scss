@@ -1,22 +1,22 @@
-@use '../global/' as *;
-.p-medical-toc__contents{
-  &:not(:first-child){
-    margin-top: rem(70);
+@use "../global/" as *;
+.p-medical-toc__contents {
+  &:not(:first-child) {
+    margin-top: rem(80);
   }
 }
-.p-medical-toc-contents__heading{
+.p-medical-toc-contents__heading {
   display: flex;
   align-items: center;
 }
-.p-medical-toc-contents__title{
+.p-medical-toc-contents__title {
   font-size: rem(20);
   font-weight: bold;
-  letter-spacing: .08em;
-  @include mq('md'){
+  letter-spacing: 0.08em;
+  @include mq("md") {
     font-size: rem(28);
   }
 }
-.p-medical-toc-contents__tag{
+.p-medical-toc-contents__tag {
   margin-left: rem(24);
   background-color: $primary-color;
   color: #fff;
@@ -24,44 +24,50 @@
   padding: rem(3) rem(12);
   border-radius: 20px;
   font-size: rem(14);
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
 }
-.p-medical-toc-contents__tag--normal{
+.p-medical-toc-contents__tag--normal {
   background-color: $primary-color;
 }
-.p-medical-toc-contents__tag--special{
+.p-medical-toc-contents__tag--special {
   background-color: $accent-color;
 }
-.p-medical-toc__list{
+.p-medical-toc__list {
   margin-top: rem(28);
-  @include mq('md'){
+  @include mq("md") {
     display: flex;
     flex-wrap: wrap;
   }
 }
-.p-medical-toc__item{
-  &:not(:first-child){
+.p-medical-toc__item {
+  &:not(:first-child) {
     margin-top: rem(16);
   }
-  @include mq('md'){
-    &:not(:first-child){
+  @include mq("md") {
+    &:not(:first-child) {
       margin-top: 0;
       margin-left: rem(16);
     }
   }
 }
-.p-medical-toc__link{
+.p-medical-toc__link {
   font-size: rem(20);
   border: 1px solid $primary-color;
   color: $primary-color;
   font-weight: bold;
   display: inline-block;
-  padding:rem(13) 0;
+  padding: rem(17) 0;
   width: 100%;
-  border-radius:10px;
-  letter-spacing: .3em;
+  border-radius: 10px;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
   text-align: center;
-  @include mq('md'){
-    padding:rem(13) rem(30);
+  transition: color .3s, background-color .3s;
+  @include mq("md") {
+    padding: rem(13) rem(30);
+  }
+  &:hover{
+    background-color: $primary-color;
+    color: #fff;
   }
 }

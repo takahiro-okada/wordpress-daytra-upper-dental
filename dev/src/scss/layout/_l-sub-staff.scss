@@ -1,5 +1,8 @@
 @use '../global/' as *;
 
 .l-sub-staff__greeting{
-  margin-top: rem(80);
+  margin-top: rem(53);
+  @include mq('md'){
+    margin-top: rem(73);
+  }
 }

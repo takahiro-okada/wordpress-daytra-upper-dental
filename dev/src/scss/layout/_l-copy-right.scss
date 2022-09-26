@@ -1,9 +1,9 @@
 @use '../global/' as *;
 
 .l-copy-right{
-  padding: rem(17) 0 rem(60);
+  padding: rem(17) 0 rem(72);
   background-color: $primary-color;
-  margin-top: rem(20);
+  margin-top: rem(56);
   @include mq('lg'){
     margin-top: rem(50);
   }

@@ -1,7 +1,7 @@
 @use '../global/' as *;
 
 .p-sub-about__title{
-  margin-top: rem(60);
+  margin-top: rem(54);
   @include mq('lg'){
     margin-top: rem(80);
   }

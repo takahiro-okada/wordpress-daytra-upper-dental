@@ -1,15 +1,17 @@
 @use "../global/" as *;
 
 .p-footer-nav {
+  margin-left: rem(10);
   @include mq("lg") {
     display: flex;
     justify-content: center;
+    margin-left: 0;
   }
 }
 
 .p-footer-nav__contents {
   &:not(:first-child) {
-    margin-top: rem(40);
+    margin-top: rem(34);
   }
   @include mq("lg") {
     &:not(:first-child) {
@@ -58,5 +60,9 @@
     transform: translateY(-50%);
     border: 6px solid transparent;
     border-left: 6px solid $primary-color;
+  }
+  transition: opacity .3s;
+  &:hover{
+    opacity: .6;
   }
 }

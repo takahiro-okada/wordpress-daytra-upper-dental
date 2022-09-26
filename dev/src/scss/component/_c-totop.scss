@@ -1,0 +1,31 @@
+@use '../global/' as *;
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  right: rem(26);
+  bottom: rem(53);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  text-decoration: none;
+  @include mq('md'){
+    right: rem(16);
+    bottom: rem(53);
+  }
+}
+.back-to-top::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: url(../img/common/totop.svg) no-repeat;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  z-index: -1;
+}

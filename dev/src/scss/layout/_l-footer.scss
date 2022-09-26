@@ -8,7 +8,14 @@
   }
 }
 .l-footer__inner{
-  max-width: rem(1040);
+  padding: 0 rem(10);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq('md'){
+    max-width: 100%;
+    width: rem(1040);
+    padding: 0 2rem;
+  }
 }
 .l-footer__contents{
   background-color: #fff;
@@ -42,7 +49,7 @@
   }
 }
 .l-footer__nav{
-  margin-top: rem(60);
+  margin-top: rem(63);
   @include mq('md'){
     margin-top: rem(35);
   }

@@ -6,7 +6,9 @@
 .p-medical-treatment__inner {
   background-color: $sub-color02;
   position: relative;
-  @include mq('md'){
+  padding-top: rem(34);
+  padding-bottom: rem(57);
+  @include mq("md") {
     padding-bottom: rem(80);
   }
   &::before {
@@ -19,7 +21,7 @@
     height: rem(30);
     bottom: rem(10);
     left: rem(12);
-    @include mq('md'){
+    @include mq("md") {
       width: rem(57);
       height: rem(57);
     }
@@ -46,9 +48,9 @@
     margin-top: rem(64);
   }
 }
-.p-medical-treatment__body{
-  &:not(:first-child){
-    margin-top: rem(40);
+.p-medical-treatment__body {
+  &:not(:first-child) {
+    margin-top: rem(36);
   }
 }
 .p-medical-treatment-content {
@@ -66,7 +68,7 @@
   top: 0;
 }
 .p-medical-treatment-content__body {
-  margin-top: rem(40);
+  margin-top: rem(19);
   @include mq("md") {
     display: flex;
     margin-top: rem(35);
@@ -75,7 +77,7 @@
 
 .p-medical-treatment-content__heading {
   border-bottom: 1px solid #c2c2c2;
-  padding-bottom: rem(20);
+  padding-bottom: rem(15);
   @include mq("md") {
     display: flex;
     align-items: center;
@@ -85,6 +87,7 @@
 .p-medical-treatment-content__title {
   font-size: rem(20);
   letter-spacing: 0.08em;
+  line-height: calc(28 / 20);
   @include mq("md") {
     font-size: rem(28);
   }
@@ -93,6 +96,8 @@
   font-size: rem(14);
   color: $primary-color;
   letter-spacing: 0.08em;
+  display: inline-block;
+  margin-top: rem(15);
   @include mq("md") {
     margin-left: rem(40);
   }
