@@ -46,7 +46,7 @@
 .p-blog-card__body{
   width: calc((100% - 40%) - rem(10));
   margin-left: rem(10);
-  padding: rem(10) 0;
+  padding: rem(5) 0;
   @include mq('md'){
     position: relative;
     width: 100%;
@@ -68,9 +68,11 @@
 .p-blog-card__date{
   font-size: rem(10);
   color:#888888;
-  margin-top: rem(6);
+  margin-top: rem(4);
+  display: inline-block;
   @include mq('md'){
    font-size:rem(11);
+   margin-top: rem(0);
   }
 }
 .p-blog-card__tag{

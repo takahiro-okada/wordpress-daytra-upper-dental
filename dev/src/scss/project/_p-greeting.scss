@@ -4,14 +4,18 @@
   margin-top: rem(40);
   @include mq('md'){
     display: flex;
-    margin-top: rem(55);
+    margin-top: rem(60);
   }
 }
 .p-greeting__body{
-  width: 46%;
+  @include mq('md'){
+    width: 46%;
+  }
 }
 .p-greeting__image{
+  margin-top: rem(30);
   @include mq('md'){
+    margin-top: 0;
     margin-left: rem(80);
     width:calc(54% - rem(80));
   }
@@ -29,7 +33,10 @@
   }
 }
 .p-greeting-body__text{
-  margin-top: rem(35);
+  margin-top: rem(25);
+  @include mq('md'){
+   margin-top: rem(35);
+  }
   p{
     font-size: rem(14);
     line-height: calc(24/14);
@@ -40,17 +47,30 @@
 }
 .p-greeting-body__name{
   text-align: right;
-  margin-top: rem(12);
   font-size: rem(14);
+  margin-top: rem(33);
+  @include mq('md'){
+    margin-top: rem(12);
+   
+  }
 }
 
 // Carrer
 .p-greeting__infos{
-  margin-top: rem(47);
+  margin-top: rem(36);
+  @include mq('md'){
+    margin-top: rem(47);
+  }
 }
 .p-greeting-info{
   &:not(:first-child){
-    margin-top: rem(20);
+    margin-top: rem(28);
+  }
+  @include mq('md'){
+    &:not(:first-child){
+      margin-top: rem(20);
+    }
+   
   }
 }
 .p-greeting-info__title{

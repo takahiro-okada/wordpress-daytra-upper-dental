@@ -1,10 +1,10 @@
 @use "../global/" as *;
 
 .p-sub-mv {
-  margin: rem(40) rem(60) 0;
+  margin: rem(20) rem(20) 0;
   display: block;
   position: relative;
-  height: rem(340);
+  height: rem(187);
   background-position: center;
   background-size: cover;
   border-radius: rem(12);
@@ -16,6 +16,10 @@
     left: 0;
     width: 100%;
     display: block;
+  }
+  @include mq('md'){
+    margin: rem(40) rem(60) 0;
+    height: rem(340);
   }
 }
 .p-sub-mv__contents{

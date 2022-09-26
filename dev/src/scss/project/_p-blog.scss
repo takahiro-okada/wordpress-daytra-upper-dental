@@ -4,13 +4,15 @@
 
 }
 .p-blog__inner{
-  max-width: rem(1040);
+  width: rem(1040);
 }
 .p-blog__title{
 
 }
 .p-blog__cards{
-  margin-top: rem(43);
+  margin-top: rem(46);
+  display: grid;
+  gap: rem(20);
   @include mq('md'){
     margin-top: rem(80);
     display: grid;

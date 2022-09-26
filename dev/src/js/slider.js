@@ -26,6 +26,8 @@ jQuery(function() {
         breakpoint: 768,
         settings: {
           slidesToShow: 3, // 画面幅750px以下でスライド3枚表示
+          slidesToShow: 1.64, // 画面幅750px以下でスライド3枚表示
+          centerPadding: "20px",
         }
       }
     ]

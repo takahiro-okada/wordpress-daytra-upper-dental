@@ -1,7 +1,7 @@
 @use "../global/" as *;
 
 .p-staff-slider {
-  margin-top: rem(120);
+  margin-top: rem(100);
   @include mq("md") {
     margin-top: rem(160);
   }
@@ -9,6 +9,10 @@
 .p-staff-slider__image {
 }
 .slick-slide {
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  @include mq('md'){
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }

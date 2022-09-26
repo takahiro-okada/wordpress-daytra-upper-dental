@@ -1,11 +1,14 @@
 @use '../global/' as *;
 
 .p-about-situation {
-  margin-top: rem(160);
+  margin-top: rem(97);
+  @include mq('md'){
+    margin-top: rem(160);
+  }
 }
 .p-about-situation__list {
   display: grid;
-  gap: rem(20) rem(30);
+  gap: rem(10) rem(11);
   grid-template-columns: 1fr 1fr;
   margin-top: rem(40);
   @include mq("md") {

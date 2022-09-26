@@ -1,53 +1,61 @@
-@use '../global/' as *;
+@use "../global/" as *;
 
-.p-staff-card{
-
+.p-staff-card {
 }
-.p-staff-card__heading{
-  text-align: center;
+.p-staff-card__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: rem(12);
 }
-.p-staff-card__charge{
+.p-staff-card__charge {
   font-size: rem(12);
 }
-.p-staff-card__name{
+.p-staff-card__name {
   font-size: rem(18);
+  margin-left: rem(12);
 }
-.p-staff-card__info{
+.p-staff-card__info {
   margin-top: rem(7);
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.p-staff-card__info-left{
-  width: 50%;
+.p-staff-card__info-left {
+  width: 42%;
   padding: rem(14) rem(20);
   background-color: $sub-color02;
   font-size: rem(14);
-  &:not(:first-child){
+  &:not(:first-child) {
     border-top: 1px solid #fff;
+  }
+  @include mq("md") {
+    width: 50%;
   }
 }
 
-.p-staff-card__info-right{
-  width: 50%;
+.p-staff-card__info-right {
+  width: 58%;
   padding: rem(14) rem(20);
   background-color: #fff;
   font-size: rem(14);
-  &:not(:first-child){
+  &:not(:first-child) {
     border-top: 1px solid #fff;
+  }
+  @include mq("md") {
+    width: 50%;
   }
 }
 
-.p-staff-card__image{
+.p-staff-card__image {
   position: relative;
   width: 100%;
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     display: block;
     padding-top: 100%;
   }
-  img{
+  img {
     position: absolute;
     top: 0;
     right: 0;

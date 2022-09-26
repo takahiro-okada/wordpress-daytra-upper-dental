@@ -1,0 +1,14 @@
+@use "../global/" as *;
+
+.p-thanks__inner {
+  max-width: rem(768);
+  margin-right: auto;
+  margin-left: auto;
+}
+.p-thanks__text {
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+}
+.p-thanks__text--attention {
+  color: #ee5a6d;
+}
